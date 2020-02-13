@@ -1,0 +1,56 @@
+.background {
+    background-image: url("../pictures/cv1.jpg");
+    height: 900px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.theme-button {
+    margin-left: 20px !important;
+    margin-top: 20px !important;
+}
+.button-color {
+    color: #BC8F8F;
+}
+.cv {
+    color: #BC8F8F;
+    font-family: 'Playfair Display', serif;
+    font-size: 130px;
+    margin-left:100px;
+    text-align: right;
+    margin-top: 300px;
+    margin-right: 65px
+}
+.name {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: right;
+    font-size: 40px;
+    margin-right: 65px;
+}
+.div-theme {
+    text-align: center;
+    background-color: rgb(188,143,143,0.8);
+    padding-bottom: 15px;
+}
+.background-black {
+    background-color: black;
+    height: 900px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.background-white {
+    background-color: white;
+    height: 900px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}

@@ -1,0 +1,17 @@
+.menu-div {
+     margin-top: 0px !important;
+     margin-bottom: auto !important;
+ }
+.menu-style {
+    font-size: 25px !important;
+    font-family: Courier New, Courier, monospace !important;
+    margin-top: 1px !important;
+    margin-right: 35px !important;
+    color: "#BC8F8F" !important;
+}
+.my-menu {
+    color: #BC8F8F !important;
+    margin-right: 30px;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+}
