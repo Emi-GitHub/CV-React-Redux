@@ -1,0 +1,26 @@
+.contact-description {
+    font-family: 'Quicksand';
+    margin-top: 50px;
+    margin-left: 150px;
+    font-size: 20px;
+}
+.contact-header {
+    font-size: 50px;
+    font-family: 'Shadows Into Light';
+    margin-left: 150px;
+}
+.contact-subheader {
+    font-family: 'Shadows Into Light';
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.contact-color {
+    color: #BC8F8F;
+}
+.subheader-desc {
+    font-family: 'Quicksand';
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 200px;
+  }

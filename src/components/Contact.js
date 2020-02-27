@@ -1,71 +1,74 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Menu from './Menu'
+import Menu from './Menu';
+import '../Style/Contact.css';
 
-export class Contact extends Component {
+class Contact extends Component {
     render() {
         return (
             <div className={this.props.theme} style={{color:this.props.name}} >
                 <Menu theme={this.props.theme}/>
-                <div className="my-header">
-                    You can contact me!
+                <div className="contact-header">You can contact me!</div>
+                <div className="contact-description">
+                    If you are interested in details you can send me e-mail,
+                    or you can call me on the number bellow. <br/>
+                    I'd be happy to reply! 
                 </div>
-                <div className="about-me" style={{marginTop:"50px", marginLeft:"150px", fontSize:"20px"}}>
-                If you are interested in details you can send me e-mail,
-                or you can call me on the number bellow. <br/>
-                I'd be happy to reply! 
+                <div className="contact-subheader">
+                    <i className="phone icon contact-color"></i>
+                    phone:
                 </div>
-
-                <div className="my-header" style={{fontSize:"30px", marginTop:"50px", marginLeft:"150px"}}>
-                    <i className="phone icon" style={{color:"#BC8F8F"}}></i>phone:
+                <div className="subheader-desc">
+                    (+387)603114029<br/>
                 </div>
-                <div className="about-me" style={{marginLeft:"200px"}}>
-                (+387)603114029
-                <br/>
+                <div className="contact-subheader">
+                    <i className="mail icon contact-color"></i>
+                    mail:
                 </div>
-
-                <div className="my-header" style={{fontSize:"30px", marginTop:"30px", marginLeft:"150px"}}>
-                    <i className="mail icon" style={{color:"#BC8F8F"}}></i>mail:
+                <div className="subheader-desc">
+                    mehicemina05@gmail.com<br/>
                 </div>
-                <div className="about-me" style={{marginLeft:"200px"}}>
-                mehicemina05@gmail.com
-                <br/>
+                <div className="contact-subheader">
+                    <i className="address card icon contact-color"></i>
+                    adress:
                 </div>
-
-                <div className="my-header" style={{fontSize:"30px", marginTop:"30px", marginLeft:"150px"}}>
-                    <i className="address card icon" style={{color:"#BC8F8F"}}></i>adress:
+                <div className="subheader-desc">
+                    Kenana Brkanića 44<br/>
                 </div>
-                <div className="about-me" style={{marginLeft:"200px"}}>
-                Kenana Brkanića 44
-                <br/>
+                <div className="contact-subheader">
+                    <i className="linkedin icon contact-color"></i>
+                    linkedin:
                 </div>
-
-                <div className="my-header" style={{fontSize:"30px", marginTop:"30px", marginLeft:"150px"}}>
-                    <i className="linkedin icon" style={{color:"#BC8F8F"}}></i>linkedin:
+                <div className="subheader-desc">
+                <a href="https://www.linkedin.com/in/emina-mehic-366729183/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="contact-color" 
+                >
+                    Click to open my linkedin profile
+                </a><br/>
                 </div>
-                <div className="about-me" style={{marginLeft:"200px"}}>
-                <a href="https://www.linkedin.com/in/emina-mehic-366729183/" target="_blank" rel="noopener noreferrer" style={{color:"#BC8F8F"}}>Click to open my linkedin profile</a>
-                <br/>
+                <div className="contact-subheader">
+                    <i className="github icon contact-color"></i>
+                    github:
                 </div>
-
-                <div className="my-header" style={{fontSize:"30px", marginTop:"30px", marginLeft:"150px"}}>
-                    <i className="github icon" style={{color:"#BC8F8F"}}></i>github:
+                <div className="subheader-desc">
+                    <a href="https://www.github.com/Emi-GitHub" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="contact-color"
+                    >
+                    Click to open my GitHub profile
+                    </a><br/>
                 </div>
-                <div className="about-me" style={{marginLeft:"200px"}}>
-                <a href="https://www.github.com/Emi-GitHub" target="_blank" rel="noopener noreferrer" style={{color:"#BC8F8F"}}>Click to open my GitHub profile</a>
-                <br/>
-                </div>
-
             </div>
         )
     }
 }
-
 const mapStateToProps = state => {
     return {
         theme: state.theme,
         name: state.name,
     }
 }
-
-export default connect(mapStateToProps)(Contact)
+export default connect(mapStateToProps)(Contact);
