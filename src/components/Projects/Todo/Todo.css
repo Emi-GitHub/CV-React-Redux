@@ -1,0 +1,26 @@
+.add-button {
+    margin-left: 30px !important;
+}
+/*.todo-div {
+    background-color: whitesmoke;
+}*/
+.main-div {
+    margin: auto;
+    width: 50%;
+}
+.todo-link {
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Shadows Into Light';
+}
+.todo-header {
+    text-align: center;
+    color: #BC8F8F;
+    margin-top: 40px;
+}
+.add-todo {
+    color: grey;
+}
+/*.todos-div {
+    background-color:rgba(218, 173, 173, 0.31) !important;
+}*/

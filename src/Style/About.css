@@ -1,0 +1,61 @@
+.my-picture {
+    background-image: url("../pictures/pic111.jpg");
+    width: 290px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.my-card {
+    margin-top: 100px !important;
+    margin-left: 300px !important;
+    float: left;
+}
+.my-header {
+    font-size: 50px;
+    font-family: 'Shadows Into Light';
+    margin-left: 150px;
+}
+.dot {
+    height: 150px;
+    width: 150px;
+    background-color:  rgba(218, 173, 173, 0.31);
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50px;
+    font-family: 'Shadows Into Light';
+    text-align: center;
+    padding-top: 50px;
+  }
+  .my-dot {
+      margin-top: 100px;
+      float: left;
+      margin-left: 100px;
+  }
+  .about-me {
+    font-family: 'Quicksand';
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .theme-language {
+    background-color:rgba(218, 173, 173, 0.31);
+    margin-top: 500px;
+    padding-bottom: 35px;
+    padding-top: 15px;
+}
+.theme-text-language {
+    font-family: 'Quicksand';
+    font-size: 20px;
+    color: black;
+    float: left;
+    margin-right: 10px;
+}
+.my-flag {
+    float: left;
+    margin-top: 5px !important;
+}

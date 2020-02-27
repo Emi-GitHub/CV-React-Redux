@@ -25,7 +25,7 @@
 }
 .name {
     font-family: Brush Script MT, Brush Script Std, cursive;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 50px;
     text-align: right;
     font-size: 40px;
@@ -46,7 +46,7 @@
     position: relative;
 }
 .background-white {
-    background-color: white;
+    background-color: whitesmoke;
     height: 900px;
     width: auto;
     background-position: center;

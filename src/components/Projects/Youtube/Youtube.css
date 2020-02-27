@@ -1,0 +1,21 @@
+.video-item{
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer;
+}
+.video-item.item img{
+    max-width: 180px;
+}
+.ui.list .list>.item>.image:only-child, .ui.list .list>.item>img.image, .ui.list>.item>.image:only-child, .ui.list>.item>img.image{
+    height: 95px !important;
+    width: 250px !important;
+}
+.main-div {
+    margin: auto;
+    width: 50%;
+}
+.youtube-link {
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Shadows Into Light';
+}

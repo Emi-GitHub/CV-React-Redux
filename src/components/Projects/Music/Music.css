@@ -1,0 +1,73 @@
+.album {
+    float:left;
+    margin: 10px 10px 10px 10px;
+}
+.main {
+    /*background-color: rgba(218, 173, 173, 0.31);*/
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 15px;
+    padding-top: 10px;
+    display: inline-table;
+    width: 350px;
+}
+.search-input {
+    width: 800px;
+    height: 40px;
+}
+.input-div {
+    margin-bottom: 30px;
+}
+.music-icon {
+    /*color:  #BC8F8F !important;*/
+    font-size: 30px !important;
+    margin-top: 20px !important;
+}
+.main-div {
+    margin: auto;
+    width: 50%;
+    /*background-color: whitesmoke;*/
+}
+/*.music-div {
+    background-color: whitesmoke;
+}*/
+.music-link {
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Shadows Into Light';
+}
+.song-list {
+    height: 700px;
+}
+.image-album {
+    width: 300px !important;
+    height: 300px !important;
+}
+.album-header {
+    padding-left: 15px;
+    display: table-row;
+    height: 60px;
+}
+.album-title {
+    padding-left: 15px;
+    max-width: 310px;
+    max-height: 40px;
+    overflow: hidden;
+    display: table-row;
+    height: 50px;
+}
+.album-button {
+    margin: auto !important;
+    width: 50% !important;
+    margin-left: 70px !important;
+}
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*background-color: whitesmoke;*/
+}

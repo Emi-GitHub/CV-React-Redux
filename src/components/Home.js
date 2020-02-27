@@ -2,28 +2,28 @@ import React, { Component } from 'react';
 import Menu from './Menu';
 import '../Style/Style.css';
 import '../Style/Home.css';
+import { connect } from 'react-redux';
+import { setTheme } from '../actions';
+import { setName } from '../actions';
+import { setDot } from '../actions';
 
 class Home extends Component {
-    state= {
-        theme: "background-white", 
-        name: "snow"
+   
+    lightTheme = () => {
+        this.props.setTheme('background-white');
+        this.props.setName('black');
+        this.props.setDot('rgba(218, 173, 173, 0.31)');
     }
     darkTheme = () => {
-        this.setState({
-            theme: "background-black",
-            name: "black"
-        })
-    }
-    lightTheme = () => {
-        this.setState({
-            theme: "background-white",
-            name: "snow"
-        })
+        this.props.setTheme('background-black');
+        this.props.setName('snow');
+        this.props.setDot('#BC8F8F');
     }
     render() {
+        console.log(this.props.dot)
         return (
             <div className="background">
-                <Menu theme={this.state.theme}/>
+                <Menu theme={this.props.theme}/>
                     <div className="div-theme">
                         <div className="theme-text">You can select theme:</div>
                         <div className="ui buttons theme-button" >
@@ -35,11 +35,18 @@ class Home extends Component {
                 
                 <div className="ui sizer vertical segmet" >
                     <div className="cv">CV</div>
-                    <div className="name" style={{color:this.state.name}}>Emina Mehic</div>
+                    <div className="name" style={{color:"snow"}}>Emina Mehic</div>
                 </div>
             </div>
         )
     }
 }
 
-export default Home;
+const mapStateToProps = state => {
+    return {
+        theme: state.theme,
+        name: state.name,
+        dot: state.dot
+    }
+}
+export default connect(mapStateToProps, {setTheme, setName, setDot})(Home);

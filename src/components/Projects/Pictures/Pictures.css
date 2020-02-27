@@ -1,0 +1,23 @@
+/*.pictures-div {
+    background-color: whitesmoke;
+}*/
+.main-div {
+    margin: auto;
+    width: 50%;
+}
+.pictures-link {
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Shadows Into Light';
+}
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*background-color: whitesmoke;*/
+}
+.image {
+    width: 300px;
+    height: 300px !important;
+}

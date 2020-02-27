@@ -7,26 +7,11 @@ class Menu extends Component {
         return (
             <div className="ui text menu menu-div">
                 <div className="right menu menu-style">
-                    <Link to={{pathname:"/", state: {theme: this.props.theme} }} 
-                        className="active item my-menu">
-                            Home
-                    </Link>
-                    <Link to={{pathname:"/about", state: {theme: this.props.theme} }} 
-                        className="item my-menu">
-                            About
-                    </Link>
-                    <Link to={{pathname:"/resume", state: {theme: this.props.theme} }} 
-                        className="item my-menu">
-                            Resume
-                    </Link>
-                    <Link to={{pathname:"/projects", state: {theme: this.props.theme} }} 
-                        className="item my-menu">
-                            Projects
-                    </Link>
-                    <Link to={{pathname:"/contact", state: {theme: this.props.theme} }} 
-                        className="item my-menu">
-                            Contact
-                    </Link>
+                    <Link to="/" className="active item my-menu">Home</Link>
+                    <Link to="/about" className="item my-menu">About</Link>
+                    <Link to="/resume" className="item my-menu">Resume</Link>
+                    <Link to="/projects" className="item my-menu">Projects</Link>
+                    <Link to="/contact" className="item my-menu">Contact</Link>
                 </div>
             </div>
         )
