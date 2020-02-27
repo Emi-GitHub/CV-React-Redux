@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import '../../Style/About.css';
-import '../../Style/Education.css';
 import { connect } from 'react-redux';
+import '../../Style/Resume.css';
 
-export class Volonteering extends Component {
+class Volonteering extends Component {
     render() {
         return (
-            <div style={{marginLeft:"300px", marginTop:"50px"}}>
-                <div className="my-header resume-header" style={{fontSize:"50px", color:this.props.name}}>Volonteering:</div>
-                <div className="my-header year" style={{fontSize:"100px", color:this.props.name}}>2019</div>
-                <div className="about-me resume-notes" style={{color:this.props.name}}>
-                    <div style={{fontSize:"20px"}}>Sarajevo Unlimited</div>
+            <div className="resume-section" style={{color:this.props.name}}>
+                <div className="field-header">Volonteering:</div>
+                <div className="field-year">2019</div>
+                <div className="resume-notes">
+                    <div className="subheader">Sarajevo Unlimited</div>
                    ( 4th regional forum on innovation, entrepreneurship ) <br/>
                    22-24 OCTOBER 2019
                 </div>
@@ -23,4 +22,4 @@ const mapStateToProps = state => {
         name: state.name,
     }
 }
-export default connect(mapStateToProps)(Volonteering)
+export default connect(mapStateToProps)(Volonteering);

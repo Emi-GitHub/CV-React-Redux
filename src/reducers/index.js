@@ -2,6 +2,7 @@ import { combineReducers } from 'redux';
 import { theme } from './UiReducer';
 import { name } from './UiReducer';
 import { dot } from './UiReducer';
+import { background } from './UiReducer';
 import { education } from './ResumeReducer';
 import { intership } from './ResumeReducer';
 import { volonteering } from './ResumeReducer';
@@ -31,4 +32,5 @@ export default combineReducers ({
     picture,
     notes,
     dot,
+    background
 })

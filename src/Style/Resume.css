@@ -1,0 +1,71 @@
+.resume-header {
+    font-size: 50px;
+    font-family: 'Shadows Into Light';
+    margin-left: 150px;
+    padding-bottom: 20px;
+}
+.resume-dot {
+    margin: auto;
+    width: 60%;
+}
+.dot {
+    height: 150px;
+    width: 158px;
+    background-color:  rgba(218, 173, 173, 0.31);
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 40px;
+    font-family: 'Shadows Into Light';
+    text-align: center;
+    padding-top: 50px;
+}
+.resume-section {
+    margin-left: 300px;
+    margin-top: 50px;
+}
+.field-header {
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: 'Shadows Into Light';
+    margin-left: 200px;
+}
+.field-year {
+    margin-top: 50px;
+    margin-left: 15px;
+    font-size: 100px;
+    font-family: 'Shadows Into Light';
+}
+.resume-notes {
+    margin-top: -30px;
+    margin-left: 200px;
+    font-family: 'Quicksand';
+    font-size: 15px;
+}
+.subheader {
+    font-size: 20px;
+}
+.pointer {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-left: 15px;
+    font-family: 'Shadows Into Light';
+}
+.interests {
+    font-size: 20px;
+    margin-left: 150px;
+    margin-top: -30px;
+    font-family: 'Quicksand';
+}
+.dot-skills {
+    color: black;
+    font-size: 40px;
+    margin-top: 30px;
+    width: 150px;
+}
+.first-dot {
+    margin-left: 800px !important;
+    padding-top: 27px !important;
+}

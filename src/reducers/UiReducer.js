@@ -16,3 +16,9 @@ export const dot = (state = 'rgba(218, 173, 173, 0.31)', action) => {
         default: return state;
     }
 }
+export const background = (state= 'whitesmoke', action) => {
+    switch(action.type) {
+        case 'SET_BACKGROUND': return action.payload;
+        default: return state;
+    }
+}

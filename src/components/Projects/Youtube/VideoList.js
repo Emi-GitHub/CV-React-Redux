@@ -7,7 +7,7 @@ function VideoList(props) {
     });
 
     return (
-        <div className="ui relaxed divided list" >
+        <div className="ui relaxed divided list">
             {renderedList}
         </div>
     )

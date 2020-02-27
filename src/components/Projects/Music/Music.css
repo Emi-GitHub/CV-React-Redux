@@ -3,7 +3,6 @@
     margin: 10px 10px 10px 10px;
 }
 .main {
-    /*background-color: rgba(218, 173, 173, 0.31);*/
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
@@ -22,19 +21,16 @@
     margin-bottom: 30px;
 }
 .music-icon {
-    /*color:  #BC8F8F !important;*/
     font-size: 30px !important;
     margin-top: 20px !important;
 }
 .main-div {
     margin: auto;
     width: 50%;
-    /*background-color: whitesmoke;*/
 }
-/*.music-div {
-    background-color: whitesmoke;
-}*/
 .music-link {
+    margin: auto;
+    width: 50%;
     margin-top: 50px;
     font-size: 30px;
     font-family: 'Shadows Into Light';
@@ -69,5 +65,4 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /*background-color: whitesmoke;*/
 }

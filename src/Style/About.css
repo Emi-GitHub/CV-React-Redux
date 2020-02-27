@@ -1,4 +1,14 @@
-.my-picture {
+.about-header {
+    font-size: 50px;
+    font-family: 'Shadows Into Light';
+    margin-left: 150px;
+}
+.about-card {
+    margin-top: 100px !important;
+    margin-left: 300px !important;
+    float: left;
+}
+.about-picture {
     background-image: url("../pictures/pic111.jpg");
     width: 290px;
     height: 300px;
@@ -7,15 +17,16 @@
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.my-card {
-    margin-top: 100px !important;
-    margin-left: 300px !important;
+.about-dot {
+    margin-top: 100px;
     float: left;
+    margin-left: 100px;
 }
-.my-header {
+.about-subheader {
     font-size: 50px;
     font-family: 'Shadows Into Light';
     margin-left: 150px;
+    font-size: 30px;
 }
 .dot {
     height: 150px;
@@ -30,27 +41,32 @@
     font-family: 'Shadows Into Light';
     text-align: center;
     padding-top: 50px;
-  }
-  .my-dot {
-      margin-top: 100px;
-      float: left;
-      margin-left: 100px;
-  }
-  .about-me {
+}
+.about-link {
+    color: black;
+}
+.about-me {
     font-family: 'Quicksand';
     margin-top: 10px;
     font-size: 15px;
-  }
-
-  .theme-language {
+}
+.theme-language {
     background-color:rgba(218, 173, 173, 0.31);
     margin-top: 500px;
     padding-bottom: 35px;
     padding-top: 15px;
 }
-.theme-text-language {
+.theme-text-select {
     font-family: 'Quicksand';
     font-size: 20px;
+    color: black;
+    float: left;
+    margin-right: 10px;
+    margin-left: 700px;
+}
+.theme-text-language {
+    font-family: 'Quicksand';
+    font-size: 15px;
     color: black;
     float: left;
     margin-right: 10px;

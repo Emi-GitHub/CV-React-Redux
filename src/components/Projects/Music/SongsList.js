@@ -21,7 +21,7 @@ class SongsList extends Component {
                     </div>
         });
         return (
-            <div className="card-wrapper" style={{backgroundColor:this.props.theme}}>
+            <div className="card-wrapper" style={{backgroundColor:this.props.background}}>
                 {songs}
             </div>
         )
@@ -31,8 +31,8 @@ class SongsList extends Component {
 const mapStateToProps = state => {
     return {
         theme: state.theme,
-        name: state.name,
-        dot: state.dot
+        dot: state.dot,
+        background: state.background
     }
 }
 export default connect(mapStateToProps)(SongsList);

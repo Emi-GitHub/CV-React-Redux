@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import axios from 'axios';
 import SearchBar from './SearchBar';
 import SongsList from './SongsList';
 import './Music.css';
-import { connect } from 'react-redux';
 
 class Music extends Component {
     state = {
@@ -23,22 +23,28 @@ class Music extends Component {
             songs: response.data.data
         })
     }
-    
     render() {
         return (
-            <div className="music-div" style={{backgroundColor:this.props.theme, color:this.props.name}}>
-                <div className="main-div" style={{backgroundColor:this.props.theme}}>
-                    <div className="music-link my-header" >
-                        To see code click on link: 
-                        <a href='https://github.com/Emi-GitHub/MyApp-React/tree/mymusic' target="_blank" rel="noopener noreferrer"> Play music</a> 
-                        <br/> <br/>
+            <div className={this.props.theme}>
+                <div className="music-div" style={{color:this.props.name}}>
+                    <div className="main-div">
+                        <div className="music-link" >
+                            To see code click on link: 
+                            <a 
+                                href='https://github.com/Emi-GitHub/MyApp-React/tree/mymusic' 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            > Play music
+                            </a> 
+                            <br/><br/>
+                        </div>
                     </div>
-                </div>
-                <div className="ui divider container"></div>
-                <SearchBar onInputSearch={this.onInputSearch}/>
-                <div className={this.props.theme}>
-                    <div className="song-list">
-                        <SongsList songs={this.state.songs}/>
+                    <div className="ui divider container"></div>
+                    <SearchBar onInputSearch={this.onInputSearch}/>
+                    <div className={this.props.theme}>
+                        <div className="song-list">
+                            <SongsList songs={this.state.songs}/>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,23 @@
+.news-header {
+    font-size: 35px;
+    font-family: 'Shadows Into Light';
+    margin-left: 180px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+.pointer {
+    font-size: 40px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: 'Shadows Into Light';
+}
+.news-link {
+    font-size: 30px;
+    margin-left: 120px;
+    margin-top: -30px;
+    font-family: 'Shadows Into Light';
+}
+.news {
+    width: 40%;
+    margin: auto;
+}

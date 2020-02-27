@@ -4,6 +4,7 @@ import Menu from './Menu';
 import { setTheme } from '../actions';
 import { setName } from '../actions';
 import { setDot } from '../actions';
+import { setBackground } from '../actions';
 import '../Style/Home.css';
 
 class Home extends Component {
@@ -11,11 +12,13 @@ class Home extends Component {
         this.props.setTheme('background-white');
         this.props.setName('black');
         this.props.setDot('rgba(218, 173, 173, 0.31)');
+        this.props.setBackground('whitesmoke');
     }
     darkTheme = () => {
         this.props.setTheme('background-black');
         this.props.setName('snow');
         this.props.setDot('#BC8F8F');
+        this.props.setBackground('black');
     }
     render() {
         return (
@@ -42,4 +45,4 @@ const mapStateToProps = state => {
         theme: state.theme
     }
 }
-export default connect(mapStateToProps, {setTheme, setName, setDot})(Home);
+export default connect(mapStateToProps, {setTheme, setName, setDot, setBackground})(Home);

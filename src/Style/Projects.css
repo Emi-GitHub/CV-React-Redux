@@ -1,0 +1,38 @@
+.project-header {
+    font-size: 50px;
+    font-family: 'Shadows Into Light';
+    margin-left: 150px;
+    padding-bottom: 20px;
+}
+.project-resume {
+    font-family: 'Quicksand';
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+.about-projects {
+    font-family: 'Quicksand';
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 60px;
+}
+.project-dot {
+    margin: auto;
+    width: 60%;
+    margin-top: 30px;
+}
+.dot {
+    height: 150px;
+    width: 180px;
+    background-color:  rgba(218, 173, 173, 0.31);
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 40px;
+    font-family: 'Shadows Into Light';
+    text-align: center;
+    padding-top: 50px;
+}

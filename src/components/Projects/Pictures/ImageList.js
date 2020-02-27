@@ -9,15 +9,15 @@ class ImageList extends Component {
                     </div> 
         });
         return (
-            <div className="card-wrapper" style={{backgroundColor:this.props.theme}}>
-            {images}
-        </div>
+            <div className="card-wrapper" style={{backgroundColor:this.props.background}}>
+                {images}
+            </div>
         )
     }
 }
 const mapStateToProps = state => {
     return {
-        theme: state.theme
+        background: state.background
     }
 }
 export default connect(mapStateToProps)(ImageList);

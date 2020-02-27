@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './Music.css';
 import { connect } from 'react-redux';
+import './Music.css';
 
 class SearchBar extends Component {
     state = { 
@@ -17,7 +17,7 @@ class SearchBar extends Component {
     }
     render() {
         return ( 
-            <div className="main-div" style={{backgroundColor:this.props.theme}}>
+            <div className="main-div">
                 <form onSubmit={this.onSubmit}>
                     <i className="music icon music-icon" style={{color:this.props.dot}}></i>
                     <div className="ui icon input input-div">
@@ -37,7 +37,6 @@ class SearchBar extends Component {
 }
 const mapStateToProps = state => {
     return {
-        theme: state.theme,
         dot: state.dot
     }
 }

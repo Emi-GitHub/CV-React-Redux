@@ -1,14 +1,13 @@
 .add-button {
     margin-left: 30px !important;
 }
-/*.todo-div {
-    background-color: whitesmoke;
-}*/
 .main-div {
     margin: auto;
     width: 50%;
 }
 .todo-link {
+    margin: auto;
+    width: 60%;
     margin-top: 50px;
     font-size: 30px;
     font-family: 'Shadows Into Light';
@@ -21,6 +20,6 @@
 .add-todo {
     color: grey;
 }
-/*.todos-div {
-    background-color:rgba(218, 173, 173, 0.31) !important;
-}*/
+.todo-input {
+    margin-bottom: 20px;
+}

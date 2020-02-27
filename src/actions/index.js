@@ -16,6 +16,12 @@ export const setDot = color => {
         payload: color
     }
 }
+export const setBackground = color => {
+    return {
+        type: 'SET_BACKGROUND',
+        payload: color
+    }
+}
 export const showEducation = education => {
     return {
         type: 'SHOW_EDUCATION',

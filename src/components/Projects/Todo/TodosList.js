@@ -26,7 +26,7 @@ class TodosList extends Component {
 const mapStateToProps = state => {
     return {
         dot: state.dot,
-        name: state.name
+        name: state.name,
     }
 }
 export default connect(mapStateToProps)(TodosList);

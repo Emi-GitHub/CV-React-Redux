@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-export class SearchBar extends Component {
+class SearchBar extends Component {
     state = {
         term: ''
     }
@@ -42,4 +42,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(SearchBar)
+export default connect(mapStateToProps)(SearchBar);

@@ -1,32 +1,31 @@
 import React, { Component } from 'react';
-import '../../Style/About.css';
-import '../../Style/Education.css';
 import { connect } from 'react-redux';
+import '../../Style/About.css';
 
-export class Interests extends Component {
+class Interests extends Component {
     render() {
         return (
-            <div style={{marginLeft:"300px", marginTop:"50px"}}>
-                 <div className="my-header resume-header" style={{fontSize:"50px", color:this.props.name}}>Interests:</div>
-                <div className="my-header year" style={{fontSize:"50px",color:this.props.name}}>-></div>
-                <div className="about-me resume-notes"  style={{fontSize:"25px",color:this.props.name}}>
-                basketball <br/>
+            <div className="resume-section" style={{color:this.props.name}}>
+                <div className="resume-header">Interests:</div>
+                <div className="pointer">-></div>
+                <div className="interests">
+                    basketball <br/>
                 </div>
-                <div className="my-header year" style={{fontSize:"50px", color:this.props.name}}>-></div>
-                <div className="about-me resume-notes" style={{fontSize:"25px", color:this.props.name}}>
-                gym <br/>
+                <div className="pointer">-></div>
+                <div className="interests">
+                    gym <br/>
                 </div>
-                <div className="my-header year" style={{fontSize:"50px", color:this.props.name}}>-></div>
-                <div className="about-me resume-notes" style={{fontSize:"25px", color:this.props.name}}>
-                jogging<br/>
+                <div className="pointer">-></div>
+                <div className="interests">
+                    jogging<br/>
                 </div>
-                <div className="my-header year" style={{fontSize:"50px", color:this.props.name}}>-></div>
-                <div className="about-me resume-notes" style={{fontSize:"25px", color:this.props.name}}>
-                yoga<br/>
+                <div className="pointer">-></div>
+                <div className="interests">
+                    yoga<br/>
                 </div>
-                <div className="my-header year" style={{fontSize:"50px", color:this.props.name}}>-></div>
-                <div className="about-me resume-notes" style={{fontSize:"25px", color:this.props.name}}>
-                cooking<br/>
+                <div className="pointer">-></div>
+                <div className="interests">
+                    cooking<br/>
                 </div>
             </div>
         )

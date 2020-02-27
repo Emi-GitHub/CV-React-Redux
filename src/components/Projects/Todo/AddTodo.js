@@ -21,9 +21,14 @@ class AddTodo extends Component {
         return (
             <div>
                 <form onSubmit={this.onFormSubmit}> 
-                    <div className="ui right labeled left icon input">
+                    <div className="ui right labeled left icon input todo-input">
                         <i className="tags icon"></i>
-                        <input type="text" placeholder="Add todo's" onChange={this.onInputChange} value={this.state.content}/>
+                        <input 
+                            type="text" 
+                            placeholder="Add todo's" 
+                            onChange={this.onInputChange} 
+                            value={this.state.content}
+                        />
                         <a className="ui tag label" href="/">todo's</a>
                         <button className="ui button add-button">Add</button>
                     </div>
