@@ -19,13 +19,13 @@ class Projects extends Component {
     }
     render() {
         return (
-            <div className={this.props.theme} style={{color:this.props.name}}>
+            <div className={this.props.theme}>
                 <Menu theme={this.props.theme}/>
-                <div className="project-header">
+                <div className="project-header" style={{color:this.props.name}}>
                     Please,<br/><br/>
                     select a field! <br/><br/>
                 </div>
-                <div className="about-projects">
+                <div className="about-projects" style={{color:this.props.name}}>
                     There is only React and Redux application, 
                     if you are interested in other application you can click on "Contact" and check my github. Enjoy! 
                 </div>
