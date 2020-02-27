@@ -17,14 +17,15 @@ class SearchBar extends Component {
     };
     render() {
         return (
-            <div className="search bar ui segment" style={{backgroundColor:this.props.dot}}>
+            <div className="search bar">
                 <form className="ui form" onSubmit={this.onFormSubmit}>
-                    <div className="field" style={{color:this.props.name}}>
-                        <label>Video Search</label>
+                    <div className="field" style={{ marginBottom:"20px"}}>
+                        <label style={{color:this.props.name}}>Video search</label>
                         <input 
                             type="text" 
                             value={this.state.term}
                             onChange={this.onInputChange}
+                            placeholder="Search for video"
                         />
                     </div>
                 </form>
@@ -36,7 +37,6 @@ class SearchBar extends Component {
 const mapStateToProps = state => {
     return {
         name: state.name,
-        dot: state.dot
     }
 }
 

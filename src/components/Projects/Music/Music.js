@@ -25,21 +25,21 @@ class Music extends Component {
     }
     
     render() {
-        console.log('in projects',this.props.theme)
         return (
             <div className="music-div" style={{backgroundColor:this.props.theme, color:this.props.name}}>
                 <div className="main-div" style={{backgroundColor:this.props.theme}}>
-                    <div className="music-link my-header">
+                    <div className="music-link my-header" >
                         To see code click on link: 
-                        <a href="https://github.com/Emi-GitHub/MyApp-React/tree/mymusic"> Play music</a> 
+                        <a href='https://github.com/Emi-GitHub/MyApp-React/tree/mymusic' target="_blank" rel="noopener noreferrer"> Play music</a> 
                         <br/> <br/>
                     </div>
                 </div>
                 <div className="ui divider container"></div>
                 <SearchBar onInputSearch={this.onInputSearch}/>
-                {'boja',console.log(this.props.theme)}
-                <div className="song-list" style={{backgroundColor:this.props.theme}}>
-                    <SongsList songs={this.state.songs}/>
+                <div className={this.props.theme}>
+                    <div className="song-list">
+                        <SongsList songs={this.state.songs}/>
+                    </div>
                 </div>
             </div>
         )
@@ -54,4 +54,3 @@ const mapStateToProps = state => {
 
 
 export default connect(mapStateToProps)(Music);
-

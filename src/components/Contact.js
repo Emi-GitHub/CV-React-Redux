@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Menu from './Menu'
-import '../Style/Style.css'
 
 export class Contact extends Component {
     render() {
@@ -30,7 +29,6 @@ export class Contact extends Component {
                 </div>
                 <div className="about-me" style={{marginLeft:"200px"}}>
                 mehicemina05@gmail.com
-                (+387)603114029
                 <br/>
                 </div>
 
@@ -46,7 +44,7 @@ export class Contact extends Component {
                     <i className="linkedin icon" style={{color:"#BC8F8F"}}></i>linkedin:
                 </div>
                 <div className="about-me" style={{marginLeft:"200px"}}>
-                <a href="https://www.linkedin.com/in/emina-mehic-366729183/" style={{color:"#BC8F8F"}}>Click to open my linkedin profile</a>
+                <a href="https://www.linkedin.com/in/emina-mehic-366729183/" target="_blank" rel="noopener noreferrer" style={{color:"#BC8F8F"}}>Click to open my linkedin profile</a>
                 <br/>
                 </div>
 
@@ -54,7 +52,7 @@ export class Contact extends Component {
                     <i className="github icon" style={{color:"#BC8F8F"}}></i>github:
                 </div>
                 <div className="about-me" style={{marginLeft:"200px"}}>
-                <a href="https://www.github.com/Emi-GitHub" style={{color:"#BC8F8F"}}>Click to open my GitHub profile</a>
+                <a href="https://www.github.com/Emi-GitHub" target="_blank" rel="noopener noreferrer" style={{color:"#BC8F8F"}}>Click to open my GitHub profile</a>
                 <br/>
                 </div>
 

@@ -25,20 +25,22 @@ export class Todo extends Component {
     }
     render(){
         return (
-            <div className="todo-div" style={{backgroundColor:this.props.theme}}>
-                <div className="main-div">
-                    <div className="my-header todo-link" style={{color:this.props.name}}>
-                        To see code click on link: 
-                        <a href="https://github.com/Emi-GitHub/MyApp-React/tree/todo"> Add todo's</a> 
-                        <br/> <br/>
+            <div className={this.props.theme}>
+                <div className="todo-div">
+                    <div className="main-div">
+                        <div className="my-header todo-link" style={{color:this.props.name}}>
+                            To see code click on link: 
+                            <a href="https://github.com/Emi-GitHub/MyApp-React/tree/todo" target="_blank" rel="noopener noreferrer"> Add todo's</a> 
+                            <br/> <br/>
+                        </div>
                     </div>
-                </div>
-                <div className="ui container">
-                    <div className="ui divider"></div>
-                    <h1 className="todo-header"  style={{color:this.props.name}}>Todo's</h1>
-                    <h3 className="add-todo"  style={{color:this.props.name}}>Add new Todo's:</h3>
-                    <AddTodo addTodo={this.addTodo}/>
-                    <TodosList todos={this.state.todos} deleteTodo={this.deleteTodo}/>
+                    <div className="ui container">
+                        <div className="ui divider"></div>
+                        <h1 className="todo-header"  style={{color:this.props.name}}>Todo's</h1>
+                        <h3 className="add-todo"  style={{color:this.props.name}}>Add new Todo's:</h3>
+                        <AddTodo addTodo={this.addTodo}/>
+                        <TodosList todos={this.state.todos} deleteTodo={this.deleteTodo}/>
+                    </div>
                 </div>
             </div>
         )

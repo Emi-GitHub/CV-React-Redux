@@ -11,7 +11,6 @@ import { showNews } from '../actions';
 import { showYoutube } from '../actions';
 import { showPicture } from '../actions';
 import { showNotes } from '../actions';
-import '../Style/Style.css';
 
 export class Projects extends Component {
     componentDidMount(){

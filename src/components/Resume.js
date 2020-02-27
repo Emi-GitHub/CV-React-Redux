@@ -6,7 +6,6 @@ import { showInterests } from '../actions'
 import { showIntership } from '../actions'
 import { showSkills } from '../actions'
 import { showVolonteering } from '../actions'
-import '../Style/Style.css';
 import '../Style/About.css';
 import Education from './Resumes/Education';
 import Volonteering from './Resumes/Volonteering';

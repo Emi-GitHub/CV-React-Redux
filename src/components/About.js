@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom';
 import Menu from './Menu';
-import '../Style/Style.css';
 import '../Style/About.css';
 
 class About extends Component {

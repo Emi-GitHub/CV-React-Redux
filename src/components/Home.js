@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import Menu from './Menu';
-import '../Style/Style.css';
-import '../Style/Home.css';
 import { connect } from 'react-redux';
+import Menu from './Menu';
 import { setTheme } from '../actions';
 import { setName } from '../actions';
 import { setDot } from '../actions';
+import '../Style/Home.css';
 
 class Home extends Component {
-   
     lightTheme = () => {
         this.props.setTheme('background-white');
         this.props.setName('black');
@@ -20,33 +18,28 @@ class Home extends Component {
         this.props.setDot('#BC8F8F');
     }
     render() {
-        console.log(this.props.dot)
         return (
             <div className="background">
                 <Menu theme={this.props.theme}/>
-                    <div className="div-theme">
-                        <div className="theme-text">You can select theme:</div>
-                        <div className="ui buttons theme-button" >
-                            <button className="ui button button-color" onClick={this.lightTheme}>Light</button>
-                            <div className="or"></div>
-                            <button className="ui button button-color" onClick={this.darkTheme}>Dark</button>
-                        </div>
+                <div className="div-theme">
+                    <div className="theme-text">You can select theme:</div>
+                    <div className="ui buttons theme-button" >
+                        <button className="ui button button-color" onClick={this.lightTheme}>Light</button>
+                        <div className="or"></div>
+                        <button className="ui button button-color" onClick={this.darkTheme}>Dark</button>
                     </div>
-                
+                </div>
                 <div className="ui sizer vertical segmet" >
                     <div className="cv">CV</div>
-                    <div className="name" style={{color:"snow"}}>Emina Mehic</div>
+                    <div className="name">Emina Mehic</div>
                 </div>
             </div>
         )
     }
 }
-
 const mapStateToProps = state => {
     return {
-        theme: state.theme,
-        name: state.name,
-        dot: state.dot
+        theme: state.theme
     }
 }
 export default connect(mapStateToProps, {setTheme, setName, setDot})(Home);

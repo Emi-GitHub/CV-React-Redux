@@ -20,18 +20,20 @@ class Pictures extends Component {
     }
     render() {
         return (
-            <div className="pictures-div" style={{backgroundColor:this.props.theme}}>
-                <div className="main-div">
-                    <div className="my-header pictures-link" style={{color:this.props.name}}>
-                        To see code click on link: 
-                        <a href="https://github.com/Emi-GitHub/Udemy-React/tree/pics"> Search pictures</a> 
-                        <br/> <br/>
+            <div className={this.props.theme}>
+                <div className="pictures-div">
+                    <div className="main-div">
+                        <div className="my-header pictures-link" style={{color:this.props.name}}>
+                            To see code click on link: 
+                            <a href="https://github.com/Emi-GitHub/Udemy-React/tree/pics" target="_blank" rel="noopener noreferrer"> Search pictures</a> 
+                            <br/> <br/>
+                        </div>
                     </div>
-                </div>
-				<div className="ui container">
-                    <div className="ui divider"></div>
-                    <SearchBar onSearchSubmit={this.onSearchSubmit} />              
-                    <ImageList images={this.state.images} /> 
+                    <div className="ui container">
+                        <div className="ui divider"></div>
+                        <SearchBar onSearchSubmit={this.onSearchSubmit} />              
+                        <ImageList images={this.state.images} /> 
+                    </div>
                 </div>
             </div>
         )

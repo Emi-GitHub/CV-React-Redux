@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { showTehnicalSkills } from '../../actions';
 import { showSocialSkills } from '../../actions';
 import { connect } from 'react-redux';
-import '../../Style/Style.css';
 import '../../Style/About.css';
 import '../../Style/Education.css';
 import '../../Style/Skills.css';

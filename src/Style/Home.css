@@ -1,11 +1,23 @@
 .background {
-    background-image: url("../pictures/cv1.jpg");
+    background-image: url("../pictures/cv.jpg");
     height: 900px;
     width: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+}
+.div-theme {
+    text-align: center;
+    background-color: rgb(188,143,143,0.8);
+    padding-bottom: 15px;
+}
+.theme-text {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    display: contents;
+    font-size: 38px;
+    margin-top: 20px;
+    margin-right: 50px;
+    color: snow;
 }
 .theme-button {
     margin-left: 20px !important;
@@ -30,11 +42,7 @@
     text-align: right;
     font-size: 40px;
     margin-right: 65px;
-}
-.div-theme {
-    text-align: center;
-    background-color: rgb(188,143,143,0.8);
-    padding-bottom: 15px;
+    color: snow;
 }
 .background-black {
     background-color: black;

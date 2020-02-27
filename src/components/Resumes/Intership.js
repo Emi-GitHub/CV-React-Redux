@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../../Style/Style.css';
 import '../../Style/About.css';
 import '../../Style/Education.css';
 import { connect } from 'react-redux';

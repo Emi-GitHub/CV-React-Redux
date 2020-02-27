@@ -16,10 +16,10 @@ class TodosList extends Component {
                 </div>
             )
         })
-        return (
+        return(
             <div className="ui segment todos-div" style={{backgroundColor:this.props.dot}}>
-            {todos}
-        </div>
+                {todos}
+            </div>
         )
     }
 }

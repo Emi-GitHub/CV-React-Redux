@@ -36,11 +36,11 @@ class Youtube extends Component {
 
     render() {
         return (
-            <div style={{backgroundColor:this.props.theme, color:this.props.name}}>
+            <div className={this.props.theme} style={{color:this.props.name}}>
                 <div className="main-div">
                     <div className="my-header youtube-link">
                         To see code click on link: 
-                        <a href="https://github.com/Emi-GitHub/Udemy-React/tree/videos"> Search videos</a> 
+                        <a href="https://github.com/Emi-GitHub/Udemy-React/tree/videos" target="_blank" rel="noopener noreferrer"> Search videos</a> 
                         <br/> <br/>
                     </div>
                 </div>
