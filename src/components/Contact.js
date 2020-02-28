@@ -8,15 +8,17 @@ class Contact extends Component {
         return (
             <div className={this.props.theme} style={{color:this.props.name}} >
                 <Menu theme={this.props.theme}/>
-                <div className="contact-header">You can contact me!</div>
+                <div className="contact-header">
+                    {this.props.language==='english' ? "You can contact me!" : "Možete me kontaktirati!"}
+                </div>
                 <div className="contact-description">
-                    If you are interested in details you can send me e-mail,
-                    or you can call me on the number bellow. <br/>
-                    I'd be happy to reply! 
+                    {this.props.language==='english' ? " If you are interested in details you can send me e-mail, or you can call me on the number bellow." : "Ako ste zainteresovani za detalje, možete mi poslati poruku na e-mail, ili me kontaktirati na broj naveden ispod."} 
+                    <br/>
+                    {this.props.language==='english' ? "I'd be happy to reply! " : "Biće mi zadovoljstvo odgovoriti!"}
                 </div>
                 <div className="contact-subheader">
                     <i className="phone icon contact-color"></i>
-                    phone:
+                    {this.props.language==='english' ? "phone:" : "telefon:"} 
                 </div>
                 <div className="subheader-desc">
                     (+387)603114029<br/>
@@ -30,7 +32,7 @@ class Contact extends Component {
                 </div>
                 <div className="contact-subheader">
                     <i className="address card icon contact-color"></i>
-                    adress:
+                    {this.props.language==='english' ? "adress:" : "adresa:"}
                 </div>
                 <div className="subheader-desc">
                     Kenana Brkanića 44<br/>
@@ -45,7 +47,7 @@ class Contact extends Component {
                     rel="noopener noreferrer"
                     className="contact-color" 
                 >
-                    Click to open my linkedin profile
+                    {this.props.language==='english' ? "Click to open my linkedin profile" : "Klikni za prikaz linkedin profila"}
                 </a><br/>
                 </div>
                 <div className="contact-subheader">
@@ -58,7 +60,7 @@ class Contact extends Component {
                         rel="noopener noreferrer" 
                         className="contact-color"
                     >
-                    Click to open my GitHub profile
+                        {this.props.language==='english' ? "Click to open my GitHub profile" : "Klikni za prikaz GitHub profila"}
                     </a><br/>
                 </div>
             </div>
@@ -69,6 +71,7 @@ const mapStateToProps = state => {
     return {
         theme: state.theme,
         name: state.name,
+        language: state.language
     }
 }
 export default connect(mapStateToProps)(Contact);

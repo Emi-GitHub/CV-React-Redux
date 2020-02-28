@@ -22,3 +22,9 @@ export const background = (state= 'whitesmoke', action) => {
         default: return state;
     }
 }
+export const language = (state='english', action) => {
+    switch(action.type) {
+        case 'SET_LANGUAGE': return action.payload;
+        default: return state;
+    }
+}

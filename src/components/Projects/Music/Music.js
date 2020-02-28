@@ -29,7 +29,7 @@ class Music extends Component {
                 <div className="music-div" style={{color:this.props.name}}>
                     <div className="main-div">
                         <div className="music-link" >
-                            To see code click on link: 
+                            {this.props.language==='english' ? "To see code click on link: " : "Klikni za prikaz koda:"}
                             <a 
                                 href='https://github.com/Emi-GitHub/MyApp-React/tree/mymusic' 
                                 target="_blank" 
@@ -55,6 +55,7 @@ const mapStateToProps = state => {
     return {
         theme: state.theme,
         name: state.name,
+        language: state.language
     }
 }
 

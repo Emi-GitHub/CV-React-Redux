@@ -17,17 +17,32 @@ class Projects extends Component {
     componentDidMount(){
         this.props.showMusic(false);
     }
+    headerLanguage = (language) => {
+        if(language === 'english'){
+            return(
+                <div className="resume-header" style={{color:this.props.name}}>
+                    Please,<br/> <br/>
+                    select a field! <br/> <br/>
+                </div>
+            )
+        }
+        else if(language === 'bosnian'){
+            return(
+                <div className="resume-header" style={{color:this.props.name}}>
+                    Odaberi polje! <br/> <br/>
+                </div>
+            )
+        }
+    }
     render() {
         return (
             <div className={this.props.theme}>
                 <Menu theme={this.props.theme}/>
                 <div className="project-header" style={{color:this.props.name}}>
-                    Please,<br/><br/>
-                    select a field! <br/><br/>
+                    {this.props.language==='english' ? this.headerLanguage('english') : this.headerLanguage('bosnian')}
                 </div>
                 <div className="about-projects" style={{color:this.props.name}}>
-                    There is only React and Redux application, 
-                    if you are interested in other application you can click on "Contact" and check my github. Enjoy! 
+                    {this.props.language==='english' ? "There is only React and Redux application, if you are interested in other application you can click on 'Contact' and check my github. Enjoy!"  : "Ovdje se nalaze samo React i Redux aplikacije, ako ste zainteresovani za ostale možete provjeriti moj GitHub profil koji se nalazi u polju 'Contact'. Uživaj!"}
                 </div>
                 <div className="project-dot">
                     <span 

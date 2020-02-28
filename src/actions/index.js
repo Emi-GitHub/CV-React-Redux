@@ -94,3 +94,9 @@ export const showMusic = value => {
         payload: !value
     }
 }
+export const setLanguage = language => {
+    return {
+        type: 'SET_LANGUAGE',
+        payload: language
+    }
+}

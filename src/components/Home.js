@@ -25,11 +25,17 @@ class Home extends Component {
             <div className="background">
                 <Menu theme={this.props.theme}/>
                 <div className="div-theme">
-                    <div className="theme-text">You can select theme:</div>
+                    <div className="theme-text">
+                        {this.props.language==='english' ? "You can select theme:" : "Izaberi temu:"}
+                    </div>
                     <div className="ui buttons theme-button" >
-                        <button className="ui button button-color" onClick={this.lightTheme}>Light</button>
+                        <button className="ui button button-color" onClick={this.lightTheme}>
+                            {this.props.language==='english' ? "Light" : "Svijetla"}
+                        </button>
                         <div className="or"></div>
-                        <button className="ui button button-color" onClick={this.darkTheme}>Dark</button>
+                        <button className="ui button button-color" onClick={this.darkTheme}>
+                            {this.props.language==='english' ? "Dark" : "Tamna"}
+                        </button>
                     </div>
                 </div>
                 <div className="ui sizer vertical segmet" >
@@ -42,7 +48,8 @@ class Home extends Component {
 }
 const mapStateToProps = state => {
     return {
-        theme: state.theme
+        theme: state.theme,
+        language: state.language
     }
 }
 export default connect(mapStateToProps, {setTheme, setName, setDot, setBackground})(Home);

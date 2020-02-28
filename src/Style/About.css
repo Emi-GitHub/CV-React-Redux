@@ -46,7 +46,7 @@
     color: black;
 }
 .about-me {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand' !important;
     margin-top: 10px;
     font-size: 15px;
 }

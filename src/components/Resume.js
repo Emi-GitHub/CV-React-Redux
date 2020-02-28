@@ -17,49 +17,63 @@ class Resume extends Component {
     componentDidMount(){
         this.props.showEducation(false);
     }
-    render() {
-        return (
-            <div className={this.props.theme} >
-                <Menu theme={this.props.theme}/>
+    headerLanguage = (language) => {
+        if(language === 'english'){
+            return(
                 <div className="resume-header" style={{color:this.props.name}}>
                     Please,<br/> <br/>
                     select a field! <br/> <br/>
                 </div>
+            )
+        }
+        else if(language === 'bosnian'){
+            return(
+                <div className="resume-header" style={{color:this.props.name}}>
+                    Odaberi polje! <br/> <br/>
+                </div>
+            )
+        }
+    }
+    render() {
+        return (
+            <div className={this.props.theme} >
+                <Menu theme={this.props.theme}/>
+                {this.props.language==='english' ? this.headerLanguage('english') : this.headerLanguage('bosnian')}
                 <div className="resume-dot">
                     <span 
                         className="dot" 
                         style={{backgroundColor:this.props.dot}} 
                         onClick={() => this.props.showEducation(this.props.education)}
                     >
-                        Education
+                        {this.props.language==='english' ? "Education" : "Edukacija"}
                     </span>
                     <span 
                         className="dot" 
                         style={{backgroundColor:this.props.dot}} 
                         onClick={() => this.props.showIntership(this.props.intership)}
                     >
-                        Intership
+                        {this.props.language==='english' ? "Intership" : "Praksa"}
                     </span>
                     <span 
                         className="dot" 
                         style={{backgroundColor:this.props.dot}} 
                         onClick={() => this.props.showVolonteering(this.props.volonteering)}
                     >
-                        Volonteering
+                        {this.props.language==='english' ? "Volonteering" : "Volontiranje"}
                     </span>
                     <span 
                         className="dot" 
                         style={{backgroundColor:this.props.dot}} 
                         onClick={() => this.props.showSkills(this.props.skills)}
                     >
-                        Skills
+                        {this.props.language==='english' ? "Skills" : "Vještine"}
                     </span>
                     <span 
                         className="dot" 
                         style={{backgroundColor:this.props.dot}} 
                         onClick={() => this.props.showInterests(this.props.interests)}
                     >
-                        Interests
+                        {this.props.language==='english' ? "Interests" : "Hobi"}
                     </span>
                 </div> 
                 {this.props.education ? <Education/> : null}
@@ -81,7 +95,8 @@ const mapStateToProps = state => {
         skills: state.skills,
         intership: state.intership,
         volonteering: state.volonteering,
-        dotColorEducation: state.dotColorEducation
+        dotColorEducation: state.dotColorEducation,
+        language: state.language
     }
 }
 export default connect(mapStateToProps, {showEducation, showInterests, showIntership, showSkills, showVolonteering})(Resume);

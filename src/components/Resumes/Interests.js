@@ -6,26 +6,28 @@ class Interests extends Component {
     render() {
         return (
             <div className="resume-section" style={{color:this.props.name}}>
-                <div className="resume-header">Interests:</div>
-                <div className="pointer">-></div>
-                <div className="interests">
-                    basketball <br/>
+                <div className="resume-header">
+                    {this.props.language==='english' ? "Interests:" : "Hobi:"}
                 </div>
                 <div className="pointer">-></div>
                 <div className="interests">
-                    gym <br/>
+                    {this.props.language==='english' ? "basketball" : "košarka"}
+                    <br/>
                 </div>
                 <div className="pointer">-></div>
                 <div className="interests">
-                    jogging<br/>
+                    {this.props.language==='english' ? "gym " : "teretana"}
+                    <br/>
                 </div>
                 <div className="pointer">-></div>
                 <div className="interests">
-                    yoga<br/>
+                    {this.props.language==='english' ? "jogging" : "trčanje"}
+                    <br/>
                 </div>
                 <div className="pointer">-></div>
                 <div className="interests">
-                    cooking<br/>
+                    yoga
+                    <br/>
                 </div>
             </div>
         )
@@ -34,6 +36,7 @@ class Interests extends Component {
 const mapStateToProps = state => {
     return {
         name: state.name,
+        language: state.language
     }
 }
 export default connect(mapStateToProps)(Interests)

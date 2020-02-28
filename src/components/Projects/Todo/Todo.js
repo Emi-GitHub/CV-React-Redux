@@ -29,7 +29,7 @@ export class Todo extends Component {
                 <div className="todo-div" style={{backgroundColor:this.props.background}}>
                     <div className="main-div">
                         <div className="my-header todo-link" style={{color:this.props.name}}>
-                            To see code click on link: 
+                            {this.props.language==='english' ? "To see code click on link: " : "Klikni za prikaz koda:"} 
                             <a 
                                 href="https://github.com/Emi-GitHub/MyApp-React/tree/todo" 
                                 target="_blank" 
@@ -54,7 +54,8 @@ const mapStateToProps = state => {
     return {
         theme: state.theme,
         name: state.name,
-        background: state.background
+        background: state.background,
+        language: state.language
     }
 }
 export default connect(mapStateToProps)(Todo);

@@ -39,7 +39,7 @@ class Youtube extends Component {
             <div className={this.props.theme} style={{color:this.props.name}}>
                 <div className="main-div">
                     <div className="my-header youtube-link">
-                        To see code click on link: 
+                        {this.props.language==='english' ? "To see code click on link: " : "Klikni za prikaz koda:"}
                         <a href="https://github.com/Emi-GitHub/Udemy-React/tree/videos" target="_blank" rel="noopener noreferrer"> Search videos</a> 
                         <br/> <br/>
                     </div>
@@ -67,7 +67,8 @@ const mapStateToProps = state => {
     return {
         theme: state.theme,
         name: state.name,
-        dot: state.dot
+        dot: state.dot,
+        language: state.language
     }
 }
 

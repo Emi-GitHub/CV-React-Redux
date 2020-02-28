@@ -15,14 +15,14 @@ class Skills extends Component {
                     style={{backgroundColor:this.props.dot}} 
                     onClick={() => this.props.showTehnicalSkills(this.props.tehnicalSkills)}
                 >
-                    Tehnical skills
+                    {this.props.language==='english' ? "Tehnical skills" : "Tehničke vještine"}
                 </span>
                 <span 
                     className="dot dot-skills" 
                     style={{backgroundColor:this.props.dot}}
                     onClick={() => this.props.showSocialSkills(this.props.socialSkills)}
                 >
-                    Social skills
+                    {this.props.language==='english' ? "Social skills" : "Socijalne vještine"}
                 </span>
                 {this.props.tehnicalSkills ? <TehnicalSkills/> : null}
                 {this.props.socialSkills ? <SocialSkills /> : null}
@@ -34,7 +34,8 @@ const mapStateToProps = state => {
     return {
         socialSkills: state.socialSkills,
         tehnicalSkills: state.tehnicalSkills,
-        dot: state.dot
+        dot: state.dot,
+        language: state.language
     }
 }
 export default connect(mapStateToProps, {showSocialSkills, showTehnicalSkills})(Skills);

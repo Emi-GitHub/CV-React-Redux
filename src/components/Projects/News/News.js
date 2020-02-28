@@ -7,7 +7,9 @@ class News extends Component {
         return (
             <div className={this.props.theme} style={{color:this.props.name}}>
                 <div className="news">
-                    <div className="news-header">Click on link bellow: <br/> <br/> <br/>
+                    <div className="news-header">
+                        {this.props.language==='english' ? "Click on link bellow:  " : "Klikni na link ispod:"}
+                        <br/> <br/> <br/>
                         <div className="pointer">-></div>
                         <div className="news-link">
                             <a 
@@ -37,6 +39,7 @@ const mapStateToProps = state => {
     return {
         theme: state.theme,
         name: state.name,
+        language: state.language
     }
 }
 export default connect(mapStateToProps)(News);
