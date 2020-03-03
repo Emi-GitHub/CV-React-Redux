@@ -20,7 +20,7 @@ class Projects extends Component {
     headerLanguage = (language) => {
         if(language === 'english'){
             return(
-                <div className="resume-header" style={{color:this.props.name}}>
+                <div className="project-header" style={{color:this.props.name}}>
                     Please,<br/> <br/>
                     select a field! <br/> <br/>
                 </div>
@@ -28,7 +28,7 @@ class Projects extends Component {
         }
         else if(language === 'bosnian'){
             return(
-                <div className="resume-header" style={{color:this.props.name}}>
+                <div className="project-header" style={{color:this.props.name}}>
                     Odaberi polje! <br/> <br/>
                 </div>
             )
@@ -38,9 +38,7 @@ class Projects extends Component {
         return (
             <div className={this.props.theme}>
                 <Menu theme={this.props.theme}/>
-                <div className="project-header" style={{color:this.props.name}}>
-                    {this.props.language==='english' ? this.headerLanguage('english') : this.headerLanguage('bosnian')}
-                </div>
+                {this.props.language==='english' ? this.headerLanguage('english') : this.headerLanguage('bosnian')}
                 <div className="about-projects" style={{color:this.props.name}}>
                     {this.props.language==='english' ? "There is only React and Redux application, if you are interested in other application you can click on 'Contact' and check my github. Enjoy!"  : "Ovdje se nalaze samo React i Redux aplikacije, ako ste zainteresovani za ostale možete provjeriti moj GitHub profil koji se nalazi u polju 'Contact'. Uživaj!"}
                 </div>
@@ -100,7 +98,8 @@ const mapStateToProps = state => {
         news: state.news,
         picture: state.picture,
         notes: state.notes,
-        hooks: state.hooks 
+        hooks: state.hooks,
+        language: state.language
     }
 }
 export default connect(mapStateToProps, {showMusic, showYoutube, showNews, showPicture, showNotes})(Projects);

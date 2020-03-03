@@ -1,14 +1,13 @@
 .project-header {
     font-size: 50px;
     font-family: 'Shadows Into Light';
-    margin-left: 150px;
-    padding-bottom: 20px;
+    margin-left: 50px;
 }
 .project-resume {
     font-family: 'Quicksand';
     margin-top: 10px;
     font-size: 15px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-bottom: 30px;
 }
 .about-projects {

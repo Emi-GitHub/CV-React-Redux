@@ -12,24 +12,6 @@ class About extends Component {
     bosnian = () => {
         this.props.setLanguage('bosnian');
     }
-    headerLanguage = (language) => {
-        if(language === 'english'){
-            return(
-                <div className="about-header" style={{color:this.props.name}}>
-                    Hey!<br/> <br/> 
-                    I'm So Glad You're Here.
-                </div>
-            )
-        }
-        else if(language === 'bosnian'){
-            return(
-                <div className="about-header" style={{color:this.props.name}}>
-                    Cao!<br/> <br/> 
-                    Drago Mi Je Sto Ste Ovdje.
-                </div>
-            )
-        }
-    }
     aboutMeLanguage = (language) => {
         if(language === 'english'){
             return(
@@ -54,42 +36,59 @@ class About extends Component {
         return (
             <div className={this.props.theme} >
                 <Menu theme={this.props.theme}/>
-                {this.props.language==='english' ? this.headerLanguage('english') : this.headerLanguage('bosnian')}
-                <div className="ui card about-card">
-                    <div className="image">
-                        <div className="about-picture"></div>
-                    </div>
-                    <div className="content"> 
-                        <a className="header about-me" href="/">Emina Mehic</a>
-                    </div>
+                <div className="about-header" style={{color:this.props.name}}>
+                    {this.props.language==='english' ? 'Hey!' : 'Cao!'} 
+                    <br/> <br/> 
+                    {this.props.language==='english' ? "I'm So Glad You're Here." : "Drago Mi Je Sto Ste Ovdje."}
                 </div>
-                <div className="about-dot">
-                    <div className="about-subheader" style={{color:this.props.name}}>
-                        {this.props.language==='english' ? "a bit about me:" : "malo o meni:"}
+                <div className="ui container">
+                    <div className="ui grid">
+                        <div className="six wide column">
+                            <div className="ui card about-card">
+                                <div className="image">
+                                    <div className="about-picture"></div>
+                                </div>
+                                <div className="content"> 
+                                    <a className="header about-me" href="/">Emina Mehic</a>
+                                </div>
+                            </div>
+                        </div>
+                        {/* about me text and dot*/}
+                        <div className="ten wide column">
+                            <div className="about-dot">
+                                <div className="about-subheader" style={{color:this.props.name}}>
+                                    {this.props.language==='english' ? "a bit about me:" : "malo o meni:"}
+                                </div>
+                                {this.props.language==='english' ? this.aboutMeLanguage('english') : this.aboutMeLanguage('bosnian')}
+                                <span className="dot" style={{backgroundColor:this.props.dot}}>
+                                    <Link to="/resume" className="about-link">
+                                    {this.props.language==='english' ? "resume" : "rezime"}
+                                    </Link>
+                                </span>
+                                <span className="dot" style={{backgroundColor:this.props.dot}}>
+                                    <Link to="/projects" className="about-link">
+                                    {this.props.language==='english' ? "projects" : "projekti"}
+                                    </Link>
+                                </span>
+                                <span className="dot" style={{backgroundColor:this.props.dot}}>
+                                    <Link to="/contact" className="about-link">
+                                    {this.props.language==='english' ? "contact" : "kontakt"}
+                                    </Link>
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    {this.props.language==='english' ? this.aboutMeLanguage('english') : this.aboutMeLanguage('bosnian')}
-                    <span className="dot" style={{backgroundColor:this.props.dot}}>
-                        <Link to="/resume" className="about-link">
-                        {this.props.language==='english' ? "resume" : "rezime"}
-                        </Link>
-                    </span>
-                    <span className="dot" style={{backgroundColor:this.props.dot}}>
-                        <Link to="/projects" className="about-link">
-                        {this.props.language==='english' ? "projects" : "projekti"}
-                        </Link>
-                    </span>
-                    <span className="dot" style={{backgroundColor:this.props.dot}}>
-                        <Link to="/contact" className="about-link">
-                        {this.props.language==='english' ? "contact" : "kontakt"}
-                        </Link>
-                    </span>
                 </div>
                 <div className="theme-language" style={{backgroundColor:this.props.dot}}>
-                    <div className="theme-text-select">Select a language:</div>
-                    <i className="ba flag my-flag" onClick={this.bosnian}/> 
-                    <div className="theme-text-language" onClick={this.bosnian}>Bosnian</div>
-                    <i className="gb us flag my-flag" onClick={this.english}/>
-                    <div className="theme-text-language" onClick={this.english}>English</div>
+                    <div className="ui container">
+                        <div className="select-language">
+                            <div className="theme-text-select">Select a language:</div>
+                            <i className="ba flag my-flag" onClick={this.bosnian}/> 
+                            <div className="theme-text-language" onClick={this.bosnian}>Bosnian</div>
+                            <i className="gb us flag my-flag" onClick={this.english}/>
+                            <div className="theme-text-language" onClick={this.english}>English</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

@@ -5,7 +5,7 @@ export const education = (state = true, action) => {
         case 'SHOW_VOLONTEERING': return false;
         case 'SHOW_SKILLS': return false;
         case 'SHOW_INTERESTS': return false
-        default: return state;
+        default: return state; 
     }
 }
 export const intership = (state = false, action) => {
