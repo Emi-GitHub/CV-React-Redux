@@ -53,7 +53,6 @@ class About extends Component {
                                 </div>
                             </div>
                         </div>
-                        {/* about me text and dot*/}
                         <div className="ten wide column">
                             <div className="about-dot">
                                 <div className="about-subheader" style={{color:this.props.name}}>

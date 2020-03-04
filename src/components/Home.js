@@ -8,7 +8,7 @@ import { setBackground } from '../actions';
 import '../Style/Home.css';
 
 class Home extends Component {
-    lightTheme = () => {
+    lightTheme = () => { 
         this.props.setTheme('background-white');
         this.props.setName('black');
         this.props.setDot('rgba(218, 173, 173, 0.31)');
