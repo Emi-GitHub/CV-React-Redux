@@ -5,7 +5,7 @@ class SocialSkills extends Component {
     render() {
         return (
             <div className="resume-section" style={{color:this.props.name}}>
-                <div className="resume-header">
+                <div className="field-header fh-interests">
                     {this.props.language==='english' ? "Social skills:" : "Socijalne vještine:"}
                 </div>
                 <div className="pointer">-></div>

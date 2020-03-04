@@ -5,31 +5,17 @@
     padding-bottom: 20px;
     margin-top: 20px;
 }
-.dot {
-    height: 150px;
-    width: 158px;
-    background-color:  rgba(218, 173, 173, 0.31);
-    border-radius: 50%;
-    margin-top: 10px;
-    font-size: 40px;
-    font-family: 'Shadows Into Light';
-    padding-top: 50px;
-}
 .field-header {
     margin-top: 50px;
-    font-size: 50px;
     font-family: 'Shadows Into Light';
-    margin-left: 200px;
 }
 .field-year {
     margin-top: 50px;
     margin-left: 15px;
-    font-size: 100px;
     font-family: 'Shadows Into Light';
 }
 .resume-notes {
     margin-top: -30px;
-    margin-left: 200px;
     font-family: 'Quicksand';
     font-size: 15px;
 }
@@ -50,9 +36,6 @@
 }
 .dot-skills {
     color: black;
-    font-size: 40px;
-    margin-top: 30px;
-    width: 150px;
     background-color:#BC8F8F !important ;
 }
 @media screen and (max-width: 500px) {
@@ -63,6 +46,36 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+    .child {
+        width: 100%;
+    }
+    .field-year {
+        font-size: 70px;
+    }
+    .field-header {
+        margin-left: 150px;
+        font-size: 40px !important;
+    }
+    .resume-notes {
+        margin-left: 150px;
+    }
+    .dot-skills {
+        height: 130px !important;
+        width: 130px !important;
+        font-size: 30px !important;
+        padding-top: 55px !important;
+        margin-right: 1px !important;
+    }
+    .aid-resume {
+        height: 130px !important;
+        width: 130px !important;
+        font-size: 30px !important;
+        padding-top: 55px !important;
+        margin-right: 1px !important;
+    }
+    .fh-interests {
+        margin-left: 30px !important;
+    }
 }
 @media screen and (min-width: 501px) {
     .parent {
@@ -72,7 +85,34 @@
         justify-content: center;
         flex-wrap: wrap;
     }
-    
+    .child {
+        width: 100%;
+    }
+    .aid-resume {
+        height: 130px !important;
+        width: 130px !important;
+        margin-right: 1px !important;
+        font-size: 29px !important;
+    }
+    .field-year {
+        font-size: 90px;
+    }
+    .field-header {
+        margin-left: 200px;
+        font-size: 45px;
+    }
+    .resume-notes {
+        margin-left: 200px;
+    }
+    .dot-skills {
+        height: 130px !important;
+        width: 130px !important;
+        margin-right: 1px !important;
+        font-size: 29px !important;
+    }
+    .fh-interests {
+        margin-left: 30px !important;
+    }
 }
 @media screen and (min-width: 850px){
     .parent {
@@ -81,5 +121,39 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+    }
+    .aid-resume {
+        height: 150px !important;
+        width: 180px !important;
+        margin-top: 35px;
+        font-size: 50px;
+    }
+    .field-year {
+        font-size: 100px;
+    }
+    .field-header {
+        margin-left: 200px;
+        font-size: 50px;
+    }
+    .resume-notes {
+        margin-left: 200px;
+    }
+    .dot-skills {
+        font-size: 40px;
+        margin-top: 30px;
+        width: 150px;
+    }
+    .aid-resume {
+        height: 170px !important;
+        width: 175px !important;
+        border-radius: 50% !important;
+        margin-top: 10px !important;
+        font-size: 40px !important;
+        font-family: 'Shadows Into Light' !important;
+        padding-top: 65px !important;
+    }
+    .resume-dot {
+        margin: auto;
+        width: 60%;
     }
 }

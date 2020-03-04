@@ -22,7 +22,6 @@
 .about-subheader {
     font-size: 50px;
     font-family: 'Shadows Into Light';
-    margin-left: 150px;
     font-size: 30px;
 }
 .about-me {
@@ -33,16 +32,12 @@
     font-size: 15px;
 }
 .dot {
-    height: 150px;
-    width: 150px;
     background-color:  rgba(218, 173, 173, 0.31);
     border-radius: 50%;
     display: inline-block;
-    margin-top: 10px;
-    font-size: 50px;
     font-family: 'Shadows Into Light';
     text-align: center;
-    padding-top: 50px;
+    margin-left: 10px;
 }
 .about-link {
     color: black;
@@ -56,17 +51,14 @@
     font-family: 'Quicksand';
     color: black;
     margin: auto;
-    width: 40%;
 }
 .theme-text-select {
     padding-right: 15px;
     font-size: 20px;
-    float: left;
 }
 .theme-text-language {
     padding-right: 10px;
     font-size: 15px;
-    float: left;
 }
 .my-flag {
     float: left;
@@ -81,7 +73,19 @@
         flex-wrap: wrap;
     }
     .theme-language {
-        padding-bottom: 45px;
+        padding-bottom: 25px;
+    }
+    .aid {
+        height: 100px !important;
+        width: 110px !important;
+        font-size: 30px !important;
+        padding-top: 35px !important;
+    }
+    .select-language {
+        width: 50%;
+    }
+    .about-subheader {
+        margin-left: 100px;
     }
 }
 @media screen and (min-width: 501px) {
@@ -95,7 +99,19 @@
     .theme-language {
         padding-bottom: 45px;
     }
-    
+    .aid {
+        height: 130px !important;
+        width: 150px !important;
+        margin-top: 10px;
+        font-size: 50px;
+        padding-top: 35px !important;
+    }
+    .select-language {
+        width: 40%;
+    }
+    .about-subheader {
+        margin-left: 150px;
+    }
 }
 @media screen and (min-width: 850px){
     .parent {
@@ -114,6 +130,26 @@
     .theme-language {
         padding-bottom: 35px;
     }
+    .aid {
+        height: 150px !important;
+        width: 180px !important;
+        margin-top: 10px;
+        font-size: 50px;
+        padding-top: 50px !important;
+    }
+    .theme-text-select {
+        float: left;
+    }
+    .theme-text-language {
+        float: left;
+    }
+    .select-language {
+        width: 40%;
+    }
+    .about-subheader {
+        margin-left: 150px;
+    }
 }
+
 
 

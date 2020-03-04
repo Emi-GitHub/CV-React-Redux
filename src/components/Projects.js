@@ -43,41 +43,43 @@ class Projects extends Component {
                     {this.props.language==='english' ? "There is only React and Redux application, if you are interested in other application you can click on 'Contact' and check my github. Enjoy!"  : "Ovdje se nalaze samo React i Redux aplikacije, ako ste zainteresovani za ostale možete provjeriti moj GitHub profil koji se nalazi u polju 'Contact'. Uživaj!"}
                 </div>
                 <div className="project-dot parent">
-                    <span 
-                        className="dot" 
-                        style={{backgroundColor:this.props.dot}} 
-                        onClick={()=>this.props.showMusic(this.props.music)}
-                    >
-                        Play music
-                    </span>
-                    <span 
-                        className="dot" 
-                        style={{backgroundColor:this.props.dot}} 
-                        onClick={()=>this.props.showYoutube(this.props.youtube)}
-                    >
-                        Youtube
-                    </span>
-                    <span 
-                        className="dot" 
-                        style={{backgroundColor:this.props.dot}} 
-                        onClick={()=>this.props.showNotes(this.props.notes)}
-                    >
-                        Notes
-                    </span>
-                    <span 
-                        className="dot" 
-                        style={{backgroundColor:this.props.dot}} 
-                        onClick={()=>this.props.showPicture(this.props.picture)}
-                    >
-                        Pictures
-                    </span>
-                    <span 
-                        className="dot"
-                        style={{backgroundColor:this.props.dot}} 
-                        onClick={()=>this.props.showNews(this.props.news)}
-                    >
-                        News
-                    </span>
+                    <div className="child">
+                        <span 
+                            className="dot aid-projects" 
+                            style={{backgroundColor:this.props.dot}} 
+                            onClick={()=>this.props.showMusic(this.props.music)}
+                        >
+                            Play music
+                        </span>
+                        <span 
+                            className="dot aid-projects" 
+                            style={{backgroundColor:this.props.dot}} 
+                            onClick={()=>this.props.showYoutube(this.props.youtube)}
+                        >
+                            Youtube
+                        </span>
+                        <span 
+                            className="dot aid-projects" 
+                            style={{backgroundColor:this.props.dot}} 
+                            onClick={()=>this.props.showNotes(this.props.notes)}
+                        >
+                            Notes
+                        </span>
+                        <span 
+                            className="dot aid-projects" 
+                            style={{backgroundColor:this.props.dot}} 
+                            onClick={()=>this.props.showPicture(this.props.picture)}
+                        >
+                            Pictures
+                        </span>
+                        <span 
+                            className="dot aid-projects"
+                            style={{backgroundColor:this.props.dot}} 
+                            onClick={()=>this.props.showNews(this.props.news)}
+                        >
+                            News
+                        </span>
+                    </div>
                 </div> 
                 {this.props.music ? <Music/> : null}
                 {this.props.notes ? <Todo /> : null}

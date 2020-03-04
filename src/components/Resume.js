@@ -40,41 +40,43 @@ class Resume extends Component {
                 <Menu theme={this.props.theme}/>
                 {this.props.language==='english' ? this.headerLanguage('english') : this.headerLanguage('bosnian')}
                 <div className="resume-dot parent">
-                    <span 
-                        className="dot" 
-                        style={{backgroundColor:this.props.dot}} 
-                        onClick={() => this.props.showEducation(this.props.education)}
-                    >
-                        {this.props.language==='english' ? "Education" : "Edukacija"}
-                    </span>
-                    <span 
-                        className="dot" 
-                        style={{backgroundColor:this.props.dot}} 
-                        onClick={() => this.props.showIntership(this.props.intership)}
-                    >
-                        {this.props.language==='english' ? "Intership" : "Praksa"}
-                    </span>
-                    <span 
-                        className="dot" 
-                        style={{backgroundColor:this.props.dot}} 
-                        onClick={() => this.props.showVolonteering(this.props.volonteering)}
-                    >
-                        {this.props.language==='english' ? "Volonteering" : "Volontiranje"}
-                    </span>
-                    <span 
-                        className="dot" 
-                        style={{backgroundColor:this.props.dot}} 
-                        onClick={() => this.props.showSkills(this.props.skills)}
-                    >
-                        {this.props.language==='english' ? "Skills" : "Vještine"}
-                    </span>
-                    <span 
-                        className="dot" 
-                        style={{backgroundColor:this.props.dot}} 
-                        onClick={() => this.props.showInterests(this.props.interests)}
-                    >
-                        {this.props.language==='english' ? "Interests" : "Hobi"}
-                    </span>
+                    <div className="child">
+                        <span 
+                            className="dot aid-resume" 
+                            style={{backgroundColor:this.props.dot}} 
+                            onClick={() => this.props.showEducation(this.props.education)}
+                        >
+                            {this.props.language==='english' ? "Education" : "Edukacija"}
+                        </span>
+                        <span 
+                            className="dot aid-resume" 
+                            style={{backgroundColor:this.props.dot}} 
+                            onClick={() => this.props.showIntership(this.props.intership)}
+                        >
+                            {this.props.language==='english' ? "Intership" : "Praksa"}
+                        </span>
+                        <span 
+                            className="dot aid-resume" 
+                            style={{backgroundColor:this.props.dot}} 
+                            onClick={() => this.props.showVolonteering(this.props.volonteering)}
+                        >
+                            {this.props.language==='english' ? "Volonteering" : "Volontiranje"}
+                        </span>
+                        <span 
+                            className="dot aid-resume" 
+                            style={{backgroundColor:this.props.dot}} 
+                            onClick={() => this.props.showSkills(this.props.skills)}
+                        >
+                            {this.props.language==='english' ? "Skills" : "Vještine"}
+                        </span>
+                        <span 
+                            className="dot aid-resume" 
+                            style={{backgroundColor:this.props.dot}} 
+                            onClick={() => this.props.showInterests(this.props.interests)}
+                        >
+                            {this.props.language==='english' ? "Interests" : "Hobi"}
+                        </span>
+                    </div>
                 </div> 
                 <div className="parent">
                     {this.props.education ? <Education/> : null}

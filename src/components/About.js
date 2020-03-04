@@ -59,17 +59,17 @@ class About extends Component {
                                     {this.props.language==='english' ? "a bit about me:" : "malo o meni:"}
                                 </div>
                                 {this.props.language==='english' ? this.aboutMeLanguage('english') : this.aboutMeLanguage('bosnian')}
-                                <span className="dot" style={{backgroundColor:this.props.dot}}>
+                                <span className="dot aid" style={{backgroundColor:this.props.dot}}>
                                     <Link to="/resume" className="about-link">
                                     {this.props.language==='english' ? "resume" : "rezime"}
                                     </Link>
                                 </span>
-                                <span className="dot" style={{backgroundColor:this.props.dot}}>
+                                <span className="dot aid" style={{backgroundColor:this.props.dot}}>
                                     <Link to="/projects" className="about-link">
                                     {this.props.language==='english' ? "projects" : "projekti"}
                                     </Link>
                                 </span>
-                                <span className="dot" style={{backgroundColor:this.props.dot}}>
+                                <span className="dot aid" style={{backgroundColor:this.props.dot}}>
                                     <Link to="/contact" className="about-link">
                                     {this.props.language==='english' ? "contact" : "kontakt"}
                                     </Link>
