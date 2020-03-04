@@ -42,7 +42,7 @@ class Projects extends Component {
                 <div className="about-projects" style={{color:this.props.name}}>
                     {this.props.language==='english' ? "There is only React and Redux application, if you are interested in other application you can click on 'Contact' and check my github. Enjoy!"  : "Ovdje se nalaze samo React i Redux aplikacije, ako ste zainteresovani za ostale možete provjeriti moj GitHub profil koji se nalazi u polju 'Contact'. Uživaj!"}
                 </div>
-                <div className="project-dot">
+                <div className="project-dot parent">
                     <span 
                         className="dot" 
                         style={{backgroundColor:this.props.dot}} 

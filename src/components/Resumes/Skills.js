@@ -9,23 +9,27 @@ import '../../Style/Resume.css';
 class Skills extends Component {
     render() { 
         return (
-            <div>
-                <span 
-                    className="dot dot-skills first-dot" 
-                    style={{backgroundColor:this.props.dot}} 
-                    onClick={() => this.props.showTehnicalSkills(this.props.tehnicalSkills)}
-                >
-                    {this.props.language==='english' ? "Tehnical skills" : "Tehničke vještine"}
-                </span>
-                <span 
-                    className="dot dot-skills" 
-                    style={{backgroundColor:this.props.dot}}
-                    onClick={() => this.props.showSocialSkills(this.props.socialSkills)}
-                >
-                    {this.props.language==='english' ? "Social skills" : "Socijalne vještine"}
-                </span>
-                {this.props.tehnicalSkills ? <TehnicalSkills/> : null}
-                {this.props.socialSkills ? <SocialSkills /> : null}
+            <div className="parent">
+                <div className="child-1">
+                    <span 
+                        className="dot dot-skills first-dot" 
+                        style={{backgroundColor:this.props.dot}} 
+                        onClick={() => this.props.showTehnicalSkills(this.props.tehnicalSkills)}
+                    >
+                        {this.props.language==='english' ? "Tehnical" : "Tehničke vještine"}
+                    </span>
+                    <span 
+                        className="dot dot-skills second-dot" 
+                        style={{backgroundColor:this.props.dot}}
+                        onClick={() => this.props.showSocialSkills(this.props.socialSkills)}
+                    >
+                        {this.props.language==='english' ? "Social" : "Socijalne vještine"}
+                    </span>
+                </div>
+                <div className="child-2">
+                    {this.props.tehnicalSkills ? <TehnicalSkills/> : null}
+                    {this.props.socialSkills ? <SocialSkills /> : null}
+                </div>
             </div>
         )
     }

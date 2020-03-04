@@ -39,7 +39,7 @@ class Resume extends Component {
             <div className={this.props.theme} >
                 <Menu theme={this.props.theme}/>
                 {this.props.language==='english' ? this.headerLanguage('english') : this.headerLanguage('bosnian')}
-                <div className="resume-dot">
+                <div className="resume-dot parent">
                     <span 
                         className="dot" 
                         style={{backgroundColor:this.props.dot}} 
@@ -76,11 +76,13 @@ class Resume extends Component {
                         {this.props.language==='english' ? "Interests" : "Hobi"}
                     </span>
                 </div> 
-                {this.props.education ? <Education/> : null}
-                {this.props.intership ? <Intership/> : null}
-                {this.props.volonteering ? <Volonteering/> : null}
-                {this.props.skills ? <Skills/> : null }
-                {this.props.interests ? <Interests /> : null }
+                <div className="parent">
+                    {this.props.education ? <Education/> : null}
+                    {this.props.intership ? <Intership/> : null}
+                    {this.props.volonteering ? <Volonteering/> : null}
+                    {this.props.skills ? <Skills/> : null }
+                    {this.props.interests ? <Interests /> : null }
+                </div>
             </div>
         )
     }

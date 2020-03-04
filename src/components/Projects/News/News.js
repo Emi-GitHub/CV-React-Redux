@@ -7,11 +7,11 @@ class News extends Component {
         return (
             <div className={this.props.theme} style={{color:this.props.name}}>
                 <div className="news">
-                    <div className="news-header">
+                    <div>
                         {this.props.language==='english' ? "Click on link bellow:  " : "Klikni na link ispod:"}
                         <br/> <br/> <br/>
-                        <div className="pointer">-></div>
-                        <div className="news-link">
+                        <div>
+                            ->
                             <a 
                                 href="https://github.com/Emi-GitHub/News-Task1" 
                                 target="_blank" rel="noopener noreferrer"
@@ -19,8 +19,8 @@ class News extends Component {
                                 News-React
                             </a>
                         </div>  <br/> <br/>
-                        <div className="pointer">-></div>
-                        <div className="news-link">
+                        <div>
+                            ->
                         <a
                             href="https://github.com/Emi-GitHub/News-Task1" 
                             target="_blank" 

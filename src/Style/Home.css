@@ -46,7 +46,6 @@
 }
 .background-black {
     background-color: black;
-    height: 900px;
     width: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,9 +53,32 @@
 }
 .background-white {
     background-color: whitesmoke;
-    height: 900px;
     width: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+@media screen and (max-width: 500px) {
+    .background-black {
+        height: 1300px;
+    }
+    .background-white {
+        height: 1300px;
+    }
+}
+@media screen and (min-width: 501px) {
+    .background-black {
+        height: 1400px;
+    }
+    .background-white {
+        height: 1400px;
+    }
+}
+@media screen and (min-width: 850px){
+    .background-black {
+        height: 900px;
+    }
+    .background-white {
+        height: 900px;
+    }
 }

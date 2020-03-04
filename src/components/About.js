@@ -38,12 +38,12 @@ class About extends Component {
                 <Menu theme={this.props.theme}/>
                 <div className="about-header" style={{color:this.props.name}}>
                     {this.props.language==='english' ? 'Hey!' : 'Cao!'} 
-                    <br/> <br/> 
+                    <br/>
                     {this.props.language==='english' ? "I'm So Glad You're Here." : "Drago Mi Je Sto Ste Ovdje."}
                 </div>
                 <div className="ui container">
-                    <div className="ui grid">
-                        <div className="six wide column">
+                    <div className="parent">
+                        <div className="child-1">
                             <div className="ui card about-card">
                                 <div className="image">
                                     <div className="about-picture"></div>
@@ -53,7 +53,7 @@ class About extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="ten wide column">
+                        <div className="child-2">
                             <div className="about-dot">
                                 <div className="about-subheader" style={{color:this.props.name}}>
                                     {this.props.language==='english' ? "a bit about me:" : "malo o meni:"}
@@ -75,7 +75,7 @@ class About extends Component {
                                     </Link>
                                 </span>
                             </div>
-                        </div>
+                       </div>
                     </div>
                 </div>
                 <div className="theme-language" style={{backgroundColor:this.props.dot}}>
