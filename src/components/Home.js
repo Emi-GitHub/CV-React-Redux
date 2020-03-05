@@ -5,6 +5,9 @@ import { setTheme } from '../actions';
 import { setName } from '../actions';
 import { setDot } from '../actions';
 import { setBackground } from '../actions';
+import MenuMobile from './MenuMobile';
+import MenuMobileButton from './MenuMobileButton';
+import BackDrop from './BackDrop';
 import '../Style/Home.css';
 
 class Home extends Component {
@@ -21,9 +24,22 @@ class Home extends Component {
         this.props.setBackground('black');
     }
     render() {
+        let sideDrawer;
+        let backdrop;
+        if(this.props.sideDrawerOpen) {
+            sideDrawer =  <MenuMobile />
+            backdrop = <BackDrop />
+        }
         return (
             <div className="background">
-                <Menu theme={this.props.theme}/>
+                <div className="menu-visible">
+                    <Menu theme={this.props.theme}/>
+                </div>
+                <div className="button-visible">
+                    <MenuMobileButton theme={this.props.theme}/>
+                </div>
+                {sideDrawer}
+                {backdrop}
                 <div className="div-theme">
                     <div className="theme-text">
                         {this.props.language==='english' ? "You can select theme:" : "Izaberi temu:"}
@@ -49,7 +65,8 @@ class Home extends Component {
 const mapStateToProps = state => {
     return {
         theme: state.theme,
-        language: state.language
+        language: state.language,
+        sideDrawerOpen: state.sideDrawerOpen
     }
 }
 export default connect(mapStateToProps, {setTheme, setName, setDot, setBackground})(Home);

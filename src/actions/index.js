@@ -100,3 +100,15 @@ export const setLanguage = language => {
         payload: language
     }
 }
+export const setSideDrawer = value => {
+    return {
+        type: 'SET_SIDEDRAWER',
+        payload: !value
+    }
+}
+export const setSideDrawerBack = () => {
+    return {
+        type: 'SET_SIDEDRAWER',
+        payload: false
+    }
+}

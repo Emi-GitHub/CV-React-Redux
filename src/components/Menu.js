@@ -5,7 +5,7 @@ import '../Style/Menu.css';
 class Menu extends Component {
     render() {
         return (
-            <div className="ui text menu menu-div">
+            <div className="ui text menu menu-div toolbar-navigation-items">
                 <div className="right menu menu-style">
                     <Link to="/" className="active item my-menu">Home</Link>
                     <Link to="/about" className="item my-menu">About</Link>

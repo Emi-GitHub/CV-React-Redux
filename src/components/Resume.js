@@ -6,6 +6,9 @@ import Volonteering from './Resumes/Volonteering';
 import Intership from './Resumes/Intership';
 import Skills from './Resumes/Skills';
 import Interests from './Resumes/Interests';
+import MenuMobile from './MenuMobile';
+import MenuMobileButton from './MenuMobileButton';
+import BackDrop from './BackDrop';
 import { showEducation } from '../actions';
 import { showInterests } from '../actions';
 import { showIntership } from '../actions';
@@ -35,9 +38,22 @@ class Resume extends Component {
         }
     }
     render() {
+        let sideDrawer;
+        let backdrop;
+        if(this.props.sideDrawerOpen) {
+            sideDrawer =  <MenuMobile />
+            backdrop = <BackDrop />
+        }
         return (
             <div className={this.props.theme} >
-                <Menu theme={this.props.theme}/>
+                <div className="menu-visible">
+                    <Menu theme={this.props.theme}/>
+                </div>
+                <div className="button-visible">
+                    <MenuMobileButton theme={this.props.theme}/>
+                </div>
+                {sideDrawer}
+                {backdrop}
                 {this.props.language==='english' ? this.headerLanguage('english') : this.headerLanguage('bosnian')}
                 <div className="resume-dot parent">
                     <div className="child">
@@ -100,7 +116,8 @@ const mapStateToProps = state => {
         intership: state.intership,
         volonteering: state.volonteering,
         dotColorEducation: state.dotColorEducation,
-        language: state.language
+        language: state.language,
+        sideDrawerOpen: state.sideDrawerOpen
     }
 }
 export default connect(mapStateToProps, {showEducation, showInterests, showIntership, showSkills, showVolonteering})(Resume);

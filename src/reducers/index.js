@@ -4,6 +4,7 @@ import { name } from './UiReducer';
 import { dot } from './UiReducer';
 import { background } from './UiReducer';
 import { language } from './UiReducer';
+import { sideDrawerOpen } from './UiReducer';
 import { education } from './ResumeReducer';
 import { intership } from './ResumeReducer';
 import { volonteering } from './ResumeReducer';
@@ -34,5 +35,6 @@ export default combineReducers ({
     notes,
     dot,
     background,
-    language
+    language,
+    sideDrawerOpen
 })

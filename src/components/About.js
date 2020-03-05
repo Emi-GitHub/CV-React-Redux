@@ -4,6 +4,9 @@ import {Link} from 'react-router-dom';
 import Menu from './Menu';
 import { setLanguage } from '../actions';
 import '../Style/About.css';
+import MenuMobile from './MenuMobile';
+import MenuMobileButton from './MenuMobileButton';
+import BackDrop from './BackDrop';
 
 class About extends Component {
     english = () => {
@@ -33,9 +36,22 @@ class About extends Component {
         }
     }
     render() {
+        let sideDrawer;
+        let backdrop;
+        if(this.props.sideDrawerOpen) {
+            sideDrawer =  <MenuMobile />
+            backdrop = <BackDrop />
+        }
         return (
-            <div className={this.props.theme} >
-                <Menu theme={this.props.theme}/>
+            <div className={this.props.theme}>
+                <div className="menu-visible">
+                    <Menu theme={this.props.theme}/>
+                </div>
+                <div className="button-visible">
+                    <MenuMobileButton theme={this.props.theme}/>
+                </div>
+                {sideDrawer}
+                {backdrop}
                 <div className="about-header" style={{color:this.props.name}}>
                     {this.props.language==='english' ? 'Hey!' : 'Cao!'} 
                     <br/>
@@ -98,7 +114,8 @@ const mapStateToProps = state => {
         theme: state.theme,
         name: state.name,
         dot: state.dot,
-        language: state.language
+        language: state.language,
+        sideDrawerOpen: state.sideDrawerOpen
     }
 }
 export default connect(mapStateToProps, {setLanguage})(About);

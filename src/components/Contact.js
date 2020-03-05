@@ -1,13 +1,29 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Menu from './Menu';
+import MenuMobile from './MenuMobile';
+import MenuMobileButton from './MenuMobileButton';
+import BackDrop from './BackDrop';
 import '../Style/Contact.css';
 
 class Contact extends Component {
     render() {
+        let sideDrawer;
+        let backdrop;
+        if(this.props.sideDrawerOpen) {
+            sideDrawer =  <MenuMobile />
+            backdrop = <BackDrop />
+        }
         return (
             <div className={this.props.theme} style={{color:this.props.name}} >
-                <Menu theme={this.props.theme}/>
+                <div className="menu-visible">
+                    <Menu theme={this.props.theme}/>
+                </div>
+                <div className="button-visible">
+                    <MenuMobileButton theme={this.props.theme}/>
+                </div>
+                {sideDrawer}
+                {backdrop}
                 <div className="contact-header">
                     {this.props.language==='english' ? "You can contact me!" : "Možete me kontaktirati!"}
                 </div>
@@ -71,7 +87,8 @@ const mapStateToProps = state => {
     return {
         theme: state.theme,
         name: state.name,
-        language: state.language
+        language: state.language,
+        sideDrawerOpen: state.sideDrawerOpen
     }
 }
 export default connect(mapStateToProps)(Contact);

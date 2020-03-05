@@ -28,3 +28,9 @@ export const language = (state='english', action) => {
         default: return state;
     }
 }
+export const sideDrawerOpen = (state=false, action) => {
+    switch(action.type) {
+        case 'SET_SIDEDRAWER': return action.payload;
+        default: return state;
+    }
+}

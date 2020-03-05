@@ -6,6 +6,9 @@ import Youtube from './Projects/Youtube/Youtube';
 import Pictures from './Projects/Pictures/Pictures';
 import News from './Projects/News/News';
 import Menu from './Menu';
+import MenuMobile from './MenuMobile';
+import MenuMobileButton from './MenuMobileButton';
+import BackDrop from './BackDrop';
 import { showMusic } from '../actions';
 import { showNews } from '../actions';
 import { showYoutube } from '../actions';
@@ -35,9 +38,22 @@ class Projects extends Component {
         }
     }
     render() {
+        let sideDrawer;
+        let backdrop;
+        if(this.props.sideDrawerOpen) {
+            sideDrawer =  <MenuMobile />
+            backdrop = <BackDrop />
+        }
         return (
             <div className={this.props.theme}>
-                <Menu theme={this.props.theme}/>
+                <div className="menu-visible">
+                    <Menu theme={this.props.theme}/>
+                </div>
+                <div className="button-visible">
+                    <MenuMobileButton theme={this.props.theme}/>
+                </div>
+                {sideDrawer}
+                {backdrop}
                 {this.props.language==='english' ? this.headerLanguage('english') : this.headerLanguage('bosnian')}
                 <div className="about-projects" style={{color:this.props.name}}>
                     {this.props.language==='english' ? "There is only React and Redux application, if you are interested in other application you can click on 'Contact' and check my github. Enjoy!"  : "Ovdje se nalaze samo React i Redux aplikacije, ako ste zainteresovani za ostale možete provjeriti moj GitHub profil koji se nalazi u polju 'Contact'. Uživaj!"}
@@ -101,7 +117,8 @@ const mapStateToProps = state => {
         picture: state.picture,
         notes: state.notes,
         hooks: state.hooks,
-        language: state.language
+        language: state.language,
+        sideDrawerOpen: state.sideDrawerOpen
     }
 }
 export default connect(mapStateToProps, {showMusic, showYoutube, showNews, showPicture, showNotes})(Projects);

@@ -35,6 +35,10 @@
         font-size: 30px !important;
         padding-top: 55px !important;
         margin-right: 1px !important;
+        margin-top: 10px !important;
+    }
+    .menu-visible {
+        display: none;
     }
 }
 @media screen and (min-width: 501px) {
@@ -53,6 +57,10 @@
         width: 130px !important;
         margin-right: 1px !important;
         font-size: 29px !important;
+        margin-top: 10px !important;
+    }
+    .button-visible {
+        display: none;
     }
 }
 @media screen and (min-width: 850px){
@@ -75,5 +83,8 @@
     .project-dot {
         margin: auto;
         width: 60%;
+    }
+    .button-visible {
+        display: none;
     }
 }

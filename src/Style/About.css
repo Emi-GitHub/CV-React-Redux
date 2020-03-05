@@ -87,6 +87,9 @@
     .about-subheader {
         margin-left: 100px;
     }
+    .menu-visible {
+        display: none;
+    }
 }
 @media screen and (min-width: 501px) {
     .parent {
@@ -111,6 +114,9 @@
     }
     .about-subheader {
         margin-left: 150px;
+    }
+    .button-visible {
+        display:none;
     }
 }
 @media screen and (min-width: 850px){
@@ -148,6 +154,9 @@
     }
     .about-subheader {
         margin-left: 150px;
+    }
+    .button-visible {
+        display:none;
     }
 }
 
