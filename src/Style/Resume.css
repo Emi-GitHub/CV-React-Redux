@@ -115,6 +115,7 @@
         width: 130px !important;
         margin-right: 1px !important;
         font-size: 29px !important;
+        padding-top: 45px;
     }
     .fh-interests {
         margin-left: 0px !important;
@@ -148,9 +149,10 @@
         margin-left: 200px;
     }
     .dot-skills {
-        font-size: 40px;
-        margin-top: 30px;
-        width: 150px;
+        font-size: 40px !important;
+        margin-top: 30px !important;
+        width: 150px !important;
+        padding-top: 45px;
     }
     .aid-resume {
         height: 170px !important;
