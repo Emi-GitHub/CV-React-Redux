@@ -39,6 +39,9 @@
     text-align: center;
     margin-left: 10px;
 }
+.dot:hover {
+    background-color: lightpink !important;
+}
 .about-link {
     color: black;
 }
@@ -46,6 +49,9 @@
     background-color:rgba(218, 173, 173, 0.31);
     margin-top: 100px;
     padding-top: 15px;
+}
+.theme-language:hover {
+    background-color: lightpink !important;
 }
 .select-language {
     font-family: 'Quicksand';

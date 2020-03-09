@@ -57,10 +57,12 @@
     .background-black {
         height: 1300px;
         width: 450px;
+		padding-top: 12px;
     }
     .background-white {
         height: 1300px;
         width: 450px;
+		padding-top: 12px;
     }
     .theme-text {
         font-size: 30px;

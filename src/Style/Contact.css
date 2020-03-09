@@ -20,6 +20,9 @@
 .contact-color {
     color: #BC8F8F;
 }
+.contact-color:hover {
+    color:lightpink;
+}
 .subheader-desc {
     font-family: 'Quicksand';
     margin-top: 10px;
