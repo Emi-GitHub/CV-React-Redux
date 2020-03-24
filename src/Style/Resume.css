@@ -38,16 +38,17 @@
     color: black;
     background-color:#BC8F8F !important ;
 }
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 @media screen and (max-width: 500px) {
-    .parent {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
     .child {
         width: 100%;
+        text-align: center;
     }
     .field-year {
         font-size: 70px;
@@ -82,15 +83,9 @@
     }
 }
 @media screen and (min-width: 501px) {
-    .parent {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
     .child {
         width: 100%;
+        text-align: center;
     }
     .aid-resume {
         height: 130px !important;
@@ -125,13 +120,6 @@
     }
 }
 @media screen and (min-width: 850px){
-    .parent {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
     .aid-resume {
         height: 150px !important;
         width: 180px !important;
