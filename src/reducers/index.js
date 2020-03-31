@@ -17,6 +17,8 @@ import { youtube } from './ProjectReducer';
 import { news } from './ProjectReducer';
 import { picture } from './ProjectReducer';
 import { notes } from './ProjectReducer';
+import { yelp } from './ProjectReducer';
+import { walter } from './ProjectReducer';
 
 export default combineReducers ({
     theme,
@@ -36,5 +38,7 @@ export default combineReducers ({
     dot,
     background,
     language,
-    sideDrawerOpen
+    sideDrawerOpen,
+    yelp,
+    walter
 })

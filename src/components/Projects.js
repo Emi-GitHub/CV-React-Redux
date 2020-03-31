@@ -9,12 +9,10 @@ import Menu from './Menu';
 import MenuMobile from './MenuMobile';
 import MenuMobileButton from './MenuMobileButton';
 import BackDrop from './BackDrop';
-import { showMusic } from '../actions';
-import { showNews } from '../actions';
-import { showYoutube } from '../actions';
-import { showPicture } from '../actions';
-import { showNotes } from '../actions';
+import { showMusic, showNews, showYoutube, showPicture, showNotes, showYelp, showWalter } from '../actions';
 import '../Style/Projects.css';
+import Yelp from './Projects/Yelp/Yelp';
+import Walter from './Projects/Walter/Walter';
 
 class Projects extends Component {
     componentDidMount(){
@@ -95,6 +93,20 @@ class Projects extends Component {
                         >
                             News
                         </span>
+                        <span 
+                            className="dot aid-projects"
+                            style={{backgroundColor:this.props.dot}} 
+                            onClick={()=>this.props.showYelp(this.props.yelp)}
+                        >
+                            Yelp
+                        </span>
+                        <span 
+                            className="dot aid-projects"
+                            style={{backgroundColor:this.props.dot}} 
+                            onClick={()=>this.props.showWalter(this.props.walter)}
+                        >
+                            Walter
+                        </span>
                     </div>
                 </div> 
                 {this.props.music ? <Music/> : null}
@@ -102,6 +114,8 @@ class Projects extends Component {
                 {this.props.youtube ? <Youtube /> : null}
                 {this.props.picture ? <Pictures /> : null}
                 {this.props.news ? <News /> : null}
+                {this.props.yelp ? <Yelp /> : null}
+                {this.props.walter ? <Walter /> : null}
             </div>
         )
     }
@@ -118,7 +132,9 @@ const mapStateToProps = state => {
         notes: state.notes,
         hooks: state.hooks,
         language: state.language,
-        sideDrawerOpen: state.sideDrawerOpen
+        sideDrawerOpen: state.sideDrawerOpen,
+        yelp: state.yelp,
+        walter: state.walter
     }
 }
-export default connect(mapStateToProps, {showMusic, showYoutube, showNews, showPicture, showNotes})(Projects);
+export default connect(mapStateToProps, {showMusic, showYoutube, showNews, showPicture, showNotes, showYelp, showWalter})(Projects);

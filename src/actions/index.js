@@ -112,3 +112,15 @@ export const setSideDrawerBack = () => {
         payload: false
     }
 }
+export const showYelp = value => {
+    return {
+        type: 'SHOW_YELP',
+        payload: !value
+    }
+}
+export const showWalter = value => {
+    return {
+        type: 'SHOW_WALTER',
+        payload: !value
+    }
+}
