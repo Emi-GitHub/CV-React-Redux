@@ -32,25 +32,25 @@ Here you can find my linkedin and github
 
 ## Resume page
 
-<img src="./src/pictres/readme/Screenshot_3.png">
-<img src="./src/pictres/readme/Screenshot_4.png">
+<img src="./src/pictures/readme/Screenshot_3.png">
+<img src="./src/pictures/readme/Screenshot_4.png">
 <!--<img src="./src/pictres/readme/Screenshot_5.png">
 <img src="./src/pictres/readme/Screenshot_6.png">
 <img src="./src/pictres/readme/Screenshot_7.png">
 <img src="./src/pictres/readme/Screenshot_8.png">
 <img src="./src/pictres/readme/Screenshot_9.png">-->
-<img src="./src/pictres/readme/Screenshot_17.png">
+<img src="./src/pictures/readme/Screenshot_17.png">
 
 ## Projects page
 
-<img src="./src/pictres/readme/Screenshot_10.png">
-<img src="./src/pictres/readme/Screenshot_12.png">
-<img src="./src/pictres/readme/Screenshot_13.png">
-<img src="./src/pictres/readme/Screenshot_14.png">
-<img src="./src/pictres/readme/Screenshot_19.png">
+<img src="./src/pictures/readme/Screenshot_10.png">
+<img src="./src/pictures/readme/Screenshot_12.png">
+<img src="./src/pictures/readme/Screenshot_13.png">
+<img src="./src/pictures/readme/Screenshot_14.png">
+<img src="./src/pictures/readme/Screenshot_19.png">
 
 ## Contact page
 
-<img src="./src/pictres/readme/Screenshot_15.png">
-<img src="./src/pictres/readme/Screenshot_20.png">
+<img src="./src/pictures/readme/Screenshot_15.png">
+<img src="./src/pictures/readme/Screenshot_20.png">
 
