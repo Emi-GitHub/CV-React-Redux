@@ -9,16 +9,16 @@
 
 <ul>
 <li>Home page</li>
-<p>Choose theme: light/dark</p>
+Choose theme: light/dark
 <li>About page</li>
-<p>Choose language: bosnian/english</p>
-<p>Choose what you want to see: resume/projects/contacts</p>
+Choose language: bosnian/english <br/>
+Choose what you want to see: resume/projects/contacts
 <li>Resume page</li>
-<p>Choose what you want to see: education/internship/volonteering/skills/interesets</p>
+Choose what you want to see: education/internship/volonteering/skills/interesets
 <li>Projects page</li>
-<p>Choose the project you want and try it!</p>
+Choose the project you want and try it!
 <li>Contact page</li>
-<p>Here you can find my linkedin and github</p>
+Here you can find my linkedin and github
 </ul>
 
 ## Home page
